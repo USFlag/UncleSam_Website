@@ -189,10 +189,7 @@ a:hover { color: #d8182c; text-decoration:none; }
 	float: right;
 	width: 195px;
 }
-#page-footer a { 
-	border-right: 1px solid #555;
-	color: #555; 
-}
+#page-footer a { color: #555; }
 #page-footer a:hover { color: #3487c3; }
 #page-footer small {
 	height: 35px;
@@ -208,4 +205,4 @@ a:hover { color: #d8182c; text-decoration:none; }
 ::-webkit-input-placeholder { color: #555; }
 ::-moz-placeholder { color: #555; } /* firefox 19+ */
 :-ms-input-placeholder { color: #555; } /* ie */
-input:-moz-placeholder { color: #3487c3; }
+input:-moz-placeholder { color: #3487c3; }π

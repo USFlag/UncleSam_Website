@@ -1,4 +1,5 @@
 
+
 /* US Flag and Banner Master Style Sheet */
 
 /* Table of Contents ------------------- */
@@ -166,6 +167,7 @@ a:hover { color: #d8182c; text-decoration:none; }
 	background-image:url(../img/dividers/page-shadow-divider.png);
 	background-repeat: no-repeat;
 	background-position: top center;
+	padding: 0 30px;
 }
 #page-footer h2 {
 	font-size: 25px;
@@ -184,18 +186,20 @@ a:hover { color: #d8182c; text-decoration:none; }
 	height: 45px;
 	line-height: 45px;
 }
-#page-footer li:last-child { border-right: none; }
+#page-footer span {
+	margin: 0 15px;
+	font-family: "Raleway", Helvetica, Arial, Verdana
+}
 #page-footer .branding {
 	float: right;
 	width: 195px;
 }
-#page-footer a { 
-	border-right: 1px solid #555;
-	color: #555; 
-}
+#page-footer a { color: #555; }
 #page-footer a:hover { color: #3487c3; }
 #page-footer small {
+	font-size: 12px;
 	height: 35px;
+	line-height: 35px;
 }
 
 /*  4.  Page Styles -------------------- */
@@ -208,4 +212,4 @@ a:hover { color: #d8182c; text-decoration:none; }
 ::-webkit-input-placeholder { color: #555; }
 ::-moz-placeholder { color: #555; } /* firefox 19+ */
 :-ms-input-placeholder { color: #555; } /* ie */
-input:-moz-placeholder { color: #3487c3; }
+input:-moz-placeholder { color: #3487c3; }π

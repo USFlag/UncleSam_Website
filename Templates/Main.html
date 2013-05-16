@@ -7,8 +7,10 @@
    <title>{tag_pagetitle}</title>
    <link href="../Assets/css/reset.css" type="text/css" rel="stylesheet" />
    <link href="../Assets/lib/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet" />
-   <link href="../Assets/css/main4.css" type="text/css" rel="stylesheet" />
+   <script src="../Assets/lib/jQuery/jquery-1.9.1.min.js" type="text/javascript"></script>
    <script src="../Assets/lib/modernizr/modernizr.custom.45783.js" type="text/javascript"></script>
+   <script src="../Assets/js/main.js" type="text/javascript"></script>
+   <link href="../Assets/css/main8.css" type="text/css" rel="stylesheet" />
    <!--[if IE 7]>
   	<link rel="stylesheet" href="../Assets/lib/font-awesome/css/font-awesome-ie7.min.css">
 	<![endif]-->
@@ -45,17 +47,28 @@
             </ul>
          </nav>
          <br class="clear" /><!--restore document flow-->
+         
       </header><!--END id="page-header"-->
       <section id="page-content">
          <h2 class="hide">Content</h2><!-- accessibility and HTML5 outline --> 
          {tag_pagecontent}
       </section><!--END id="page-content"-->
       <footer id="page-footer">
-      	
+      	<h2>More</h2>
+         <nav>
+         	<ul>
+            	<li><a href="../about.html">ABOUT</a><span>|</span></li>
+               <li><a href="../faq.html">FAQs</a><span>|</span></li>
+               <li><a href="#">FACEBOOK</a><span>|</span></li>
+               <li><a href="#">TWITTER</a><span>|</span></li>
+               <li><a href="#">GOOGLE +</a></li>
+            </ul>
+         </nav>
+         <div class="branding"><a href="../home.html"><img src="../Assets/img/branding/logo.png" width="195" alt="US Flag and Banner Logo"></a></div><!--END class="branding"-->
+         <br class="clear" /><!--restore document flow-->
+         <small>Copyright &copy; 2013 US Flag and Banner <span>|</span><a href="../terms.html">Terms of Use</a> <span>|</span> <a href="../privacy.html">Privacy Policy</a></small>
       </footer><!--END id="page-footer"-->
    </div><!--END id="page"-->
    <div class="red-border"></div><!--purely aesthetic...bad practice...temporary until find better solution-->
-   <script src="../Assets/lib/jQuery/jquery-1.9.1.min.js" type="text/javascript"></script>
-   <script src="../Assets/js/main.js" type="text/javascript"></script>
 </body>
 </html>
