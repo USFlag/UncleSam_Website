@@ -1413,7 +1413,7 @@ p.literature-container span.icon, p.literature-container span.name {
 /* @group Search */
 
 .search-box {
-	padding: 6px;
+	/*padding: 6px;*/
 }
 
 .search-box input.cat_textbox_small {
