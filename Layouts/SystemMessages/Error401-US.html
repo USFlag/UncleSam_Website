@@ -1,26 +1,60 @@
-
-<div class="system-error-message">
-	<h1>Unauthorized Access</h1>
-	<p>
-		We could not display the content you requested. This is because it is held within a Secure Zone. Please log in to access this content, or alternatively contact us to request access.
-	</p>
-	<p>
-		<a href="/">Click here</a> to go back to our Home Page.
-	</p>
-	<hr />
-	<form name="catseczoneform68244" onsubmit="return checkWholeForm68244(this)" action="/ZoneProcess.aspx?ZoneID=-1&amp;OID={module_oid}&amp;OTYPE={module_otype}" method="post">
-		<div class="form">
-			<div class="item">
-				<label>Username</label><br/><input class="textbox" maxlength="255" name="Username" />
-			</div>
-			<div class="item">
-				<label>Password</label><br/><input class="textbox" type="password" maxlength="255" value="" autocomplete="off" name="Password" />
-			</div>
-			<div class="item">
-				<input class="button" type="submit" value="Login" />&nbsp;<a href="{tag_passwordRetrieveLink}">Lost password?</a>
-			</div>
-		</div>
-		<script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script>
-		<script type="text/javascript">function checkWholeForm68244(theForm){var why = "";if (theForm.Username) why += isEmpty(theForm.Username.value, "Username");if (theForm.Password) why += isEmpty(theForm.Password.value, "Password");if (why != ""){alert(why);return false;}theForm.submit();return false;}</script>
-	</form>
+<div id="login-page">
+   <div class="layout-two-third">
+      <div class="intro-type">
+         <h2>Manage Your Account</h2>
+         <p>Easily manage your account information and view past orders and inquiries.</p>
+      </div>
+      <!--END class="intro-type"-->
+      <div class="login">
+         <form name="catseczoneform90750" onsubmit="return checkWholeForm90750(this)" method="post" action="https://usflagandbanner.worldsecuresystems.com/ZoneProcess.aspx?ZoneID=51&Referrer={module_siteUrl,true,true}&OID={module_oid}&OTYPE={module_otype}&PageID=http%3a%2f%2fusflagandbanner.businesscatalyst.com%2fAccount%2faccount.html">
+            <ul>
+               <li class="user-name">
+                  <label for="SZUsername">Username</label>
+                  <input class="cat_textbox_small" type="text" name="Username" id="SZUsername" maxlength="255" />
+               </li>
+               <!--END class="user-name"-->
+               <li class="pass-word">
+                  <label for="SZPassword">Password</label>
+                  <input class="cat_textbox_small" type="password" name="Password" id="SZPassword" maxlength="255" autocomplete="off" />
+               </li>
+               <!--END class="pass-word"-->
+               <li class="remember-me">
+                  <input type="checkbox" name="RememberMe" id="RememberMe" />
+                  <label for="RememberMe">Remember Me</label>
+               </li>
+               <!--END class="remember-me"-->
+               <li class="submit">
+                  <input type="submit" value="LOG IN" />
+                  <br />
+                  <p>Can't remember your password?</p>
+                  <a href="/_System/SystemPages/PasswordRetrieveRequest">Lost password?</a>
+                  <hr class="style-three-short" />
+                  <p>Need to set up a new account? Do it here.</p>
+                  <a href="../../Account/register.html">Set up new account?</a> 
+               </li>
+            </ul>
+            <script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script><script type="text/javascript">
+            //<![CDATA[
+            function checkWholeForm90750(theForm){var why = "";if (theForm.Username) why += isEmpty(theForm.Username.value, "Username");if (theForm.Password) why += isEmpty(theForm.Password.value, "Password");if (why != ""){alert(why);return false;}theForm.submit();return false;}
+            //]]>
+         </script>
+         </form>
+      </div>
+      <!--END class="login"-->
+   </div>
+   <!--END class="layout-two-third"-->
+   <div class="layout-one-third contact-info">
+      <h3>Contact Info:</h3>
+      <p><i>Phone: 352-237-5698</i><br />
+         <i>Toll-Free: 1-800-897-3570</i><br />
+         <i>info@usflagandbanner.info</i><br />
+         <i>www.usflagandbanner.com</i></p>
+      <hr class="style-three" />
+      <h3>Office Hours:</h3>
+      <p>Our office hours are Monday through Friday 8:00 a.m. to 5 p.m. Eastern Standard Time.</p>
+   </div>
+   <!--END class="layout-one-third contact-info"-->
+   <br class="clear" />
+   <!--restore document flow-->
 </div>
+<!--END id="login-page"-->

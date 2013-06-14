@@ -4,14 +4,15 @@
 
 /*  1.  Element Styles */
 /*  2.  Class Styles (General) */
-/*  3.  Layout Styles */
+/*  3.  Type Styles */
 /*  4.  Template Styles */
 /*  5.  Page Styles */
-/*  6.  Type Styles */
+/*  6.  Layout Styles */
 /*  7.  Promo Box */
 /*  8.  Alert Messages */
 /*  9.  Tabbed Panels and Slider */
 /*  10. Form Styles */
+/*  11. Shop */
 
 /* Other ------------------------------- */
  
@@ -57,6 +58,7 @@ a.button-ex-large:hover { background-color: #555; color: #fff; }
 hr { -webkit-margin-before: 0; -webkit-margin-after: 0; margin-before: 0; margin-after: 0; }
 hr.style-two { border: 0; height: 1px; background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); }
 hr.style-three { border: 0; border-bottom: 1px dashed #ccc; background: #999; }
+hr.style-three-short { border: 0; border-bottom: 1px dashed #ccc; background: #999; margin: 10px 0 5px 0; width: 200px; }
 b { font-weight: bold; } 
 i { font-style: italic; }
 /*  2.  Class Styles (General) --------- */
@@ -70,6 +72,7 @@ h3 { font-family: "Raleway", Helvetica, Arial, Verdana; font-size: 20px; font-we
 p { font-family: "Open Sans", Helvetica, Arial, Verdana; font-size: 13px; text-align: justify; font-weight: 400; line-height: 25px; }
 .icons-ul li { display: list-item; }
 .icon-ok::before { padding-right: 10px; }
+.intro-type { margin: 0 0 30px 0; }
 /*  4.  Template Styles ---------------- */
 #page { background-color: #f8f8ff; border-left: 1px solid #c2c2c2; border-right: 1px solid #c2c2c2; margin: 0 auto; width: 968px; }
 #page-header { background-image: url(../img/dividers/double_blue_divider.png); background-repeat: no-repeat; background-position: 316px 14px; height: 135px; }
@@ -87,7 +90,7 @@ p { font-family: "Open Sans", Helvetica, Arial, Verdana; font-size: 13px; text-a
 .main-nav a { display: block; height: 50px; width: 216px; }
 .main-nav a:hover { background-color: rgb(0, 0, 0); /* Fall-back for browsers that don't support rgba */ background-color: rgba(0, 0, 0, .25); color: #fff; display: block; height: 50px; width: 216px; }
 .main-nav .feather-flags { border-right: 1px solid #f8f8ff; border-left: 1px solid #f8f8ff; }
-#page-content { min-height: 500px; }
+#page-content { min-height: 450px; }
 #page-footer { background-image: url(../img/dividers/page-shadow-divider.png); background-repeat: no-repeat; background-position: top center; color: #555; padding: 10px 30px; }
 #page-footer h2 { font-size: 25px; height: 45px; line-height: 45px; }
 #page-footer nav { float: left; height: 45px; width: 625px; }
@@ -131,29 +134,48 @@ p { font-family: "Open Sans", Helvetica, Arial, Verdana; font-size: 13px; text-a
 #about .product-cta h2 { font-size: 60px; font-weight: 200; }
 #about .product-cta p { font-family: "Raleway", Helvetica, Arial, Verdana; font-size: 20px; font-weight: 200; }
 /*contact.html*/
-#contact { margin: 30px 0 60px 0; }
-#contact hr.style-three { margin: 40px 0; }
-.contact-intro-type { margin: 0 0 30px 0; }
-#contact-form { color: #555; font-family: "Open Sans", Helvetica, Arial, Verdana; font-size: 15px; font-weight: 400; }
-#contact-form b { font-weight: normal; }
-#contact label { display: block; margin: 5px 0; }
-#contact input { border: 1px solid #c2c2c2; color: #555; font-family: "Open Sans", Helvetica, Arial, Verdana; font-size: 15px; font-weight: 300; height: 30px; outline: none; padding: 0 10px; width: 245px; webkit-appearance: none; }
-.contact-form-fields li > div { float: left; width: 297.5px; }
-.contact-form-fields li { margin: 30px 0; }
+#contact { margin: 30px 0 60px 0;  min-height: 800px; }
+.form { font-family: "Open Sans", Helvetica, Arial, Verdana; font-size: 15px; font-weight: 400; }
+.form b { font-weight: normal; }
+label { display: block; font-size: 15px; margin: 5px 0; }
+input { background-color: #f4f4fb; border: 1px solid #cdcdcd; color: #555; font-family: "Open Sans", Helvetica, Arial, Verdana; font-size: 15px; font-weight: 300; height: 30px; outline: none; padding: 0 10px; width: 260px; webkit-appearance: none; }
+.form-fields li > div { float: left; width: 282px; }
+.form-fields li { margin: 30px 0; }
 .preferred-contact-method input[type="radio"] { width: 25px!important; height: 16px!important; }
-.comments textarea { border: 1px solid #c2c2c2; height: 125px; width: 588px; }
-.contact-form-fields input[type="submit"] { background-color: #3487c3; background-image: url(../img/backgrounds/patterns/2.png); color: #fff!important; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; border: 2px solid #fff!important; -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.35); -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.35); box-shadow: 0px 3px 5px rgba(0,0,0,0.35); display: block; font-family: "Anton", Impact, Helvetica, Arial, Verdana!important; font-size: 22px!important; line-height: 40px; height: 40px!important; text-align: center; width: 120px!important; }
-.contact-form-fields input[type="submit"]:hover { background-color: #555; color: #fff; cursor: pointer; }
+.comments textarea { background-color: #f4f4fb; border: 1px solid #cdcdcd; height: 125px; width: 588px; }
+.form-fields input[type="submit"] { background-color: #3487c3!important; background-image: url(../img/backgrounds/patterns/2.png); color: #fff!important; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; border: 2px solid #fff!important; -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.35); -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.35); box-shadow: 0px 3px 5px rgba(0,0,0,0.35); display: block; font-family: "Anton", Impact, Helvetica, Arial, Verdana!important; font-size: 22px!important; /*line-height: 40px;*/ height: 40px!important; text-align: center; width: 120px!important; }
+.form-fields input[type="submit"]:hover { background-color: #555!important; color: #fff; cursor: pointer; }
 .required { color: #3487c3; display: inline-block; }
 .last-name, .phone, .company { padding-left: 30px; width: 267.5px!important; }
 li.form-submit { margin-top: 45px; }
-.captchaimg { width: 200px!important; }
+.captchaimg { width: 160px!important; }
 #CaptchaV2 { height: 34px!important; }
 .contact-info { background-color: #f8f8ff; border: 3px solid #fff; -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.25); -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.25); box-shadow: 0px 1px 2px rgba(0,0,0,0.25); padding: 25px 30px!important; width: 218px!important; margin-left: 30px!important; }
-.contact-info h3 { font-size: 20px; padding-bottom: 5px; }
-
+.contact-info h3 { font-family: "Arimo", Helvetica, Arial, Verdana; font-weight: 700; font-size: 16px; padding-bottom: 5px; }
+.contact-info hr.style-three { margin: 40px 0; }
+/*faq.html*/
+#faq { margin: 30px 0 60px 0;  min-height: 800px; }
+.faq-container { margin: 0 0 30px 0; }
+.faqs hr.style-three { margin: 0 0 30px 0; }
+#faq h1 { font-size: 30px; }
+#faq h2 { font-family: "Arimo", Helvetica, Arial, Verdana; font-weight: 700; font-size: 16px; height: 30px; line-height: 30px; padding-bottom: 5px;  }
+/*login.html*/
+#login-page { margin: 30px 0 60px 0; min-height: 415px; }
+#login-page label { display: block; margin: 5px 0; }
+#login-page .remember-me label { display: inline-block; margin: 5px 0; }
+#login-page input { background-color: #f4f4fb; border: 1px solid #cdcdcd; color: #555; font-family: "Open Sans", Helvetica, Arial, Verdana; font-size: 15px; font-weight: 300; height: 30px; outline: none; margin-bottom: 15px; padding: 0 10px; width: 260px; webkit-appearance: none; }
+#login-page .remember-me input[type="checkbox"] { width: 25px!important; height: 15px!important; }
+#login-page input[type="submit"] { background-color: #3487c3!important; background-image: url(../img/backgrounds/patterns/2.png); color: #fff!important; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; border: 2px solid #fff!important; -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.35); -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.35); box-shadow: 0px 3px 5px rgba(0,0,0,0.35); display: block; font-family: "Anton", Impact, Helvetica, Arial, Verdana!important; font-size: 22px!important; /*line-height: 40px;*/ height: 40px!important; text-align: center; width: 120px!important; }
+#login-page input[type="submit"]:hover { background-color: #555!important; color: #fff; cursor: pointer; }
+#login-page .submit a { color: #3487c3; }
+#login-page .submit a:hover { color: #555; }
+/*Register*/
+#register-page { margin: 30px 0 60px 0;  min-height: 600px; }
+.username, .password-confirm, .work-phone { padding-left: 30px; width: 267.5px!important; }
+/*account.html*/
+#account-page { margin: 30px 0 60px 0;  min-height: 600px; }
 /*  6.  Layout Styles ------------------ */
-.layout-full, .layout-one-half, .layout-one-third, .layout-one-fourth, .layout-two-third, .layout-three-fourth { /*background-color: #f8f8ff; border: 3px solid #fff; -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.25); -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.25); box-shadow: 0px 1px 2px rgba(0,0,0,0.25);*/ float: left; padding-left: 30px; }
+.layout-full, .layout-one-half, .layout-one-third, .layout-one-fourth, .layout-two-third, .layout-three-fourth { /*background-color: #f8f8ff; border: 3px solid #fff; -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.25); -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.25); box-shadow: 0px 1px 2px rgba(0,0,0,0.25);*/ float: left; padding-left: 30px!important; }
 .layout-full { width: 910px; }
 .layout-one-half { width: 440px; }
 .layout-one-third { width: 283.33px; }
@@ -194,3 +216,38 @@ li.form-submit { margin-top: 45px; }
 ::-moz-placeholder {color: #555;} /* firefox 19+ */
 :-ms-input-placeholder {color: #555;} /* ie */
 input:-moz-placeholder {color: #3487c3;}
+
+/*  11. Shop --------------------------- */
+.online-shop {}
+.online-shop a { color: blue; }
+.online-shop span {}
+.online-shop hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+.catalogs { }
+.catalogs h2 { margin-bottom: 15px; }
+.catalogs li > div { height: 210px; margin-top: 30px; margin-bottom: 30px; }
+.small-products { }
+.small-products h2 { margin-bottom: 15px; }
+.small-products hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+.small-products li > div { height: 210px; margin-top: 30px; margin-bottom: 30px; }
+.banner-img { width: 860px; margin: 0 auto; }
+.banner-content {}
+.flag-layout {}
+.flag-layout .img { width: 440px; float: left; padding-left: 30px!important; }
+.flag-layout .content { width: 440px; float: left; padding-left: 30px!important; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

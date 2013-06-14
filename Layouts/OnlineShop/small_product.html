@@ -1,2 +1,19 @@
-
-  <div class="shop-product-small clear">  <h5>{tag_name}</h5>  <div class="image">{tag_smallimage}</div>  <ul>  <li class="price">Price: <strong>{tag_saleprice}</strong>&nbsp;</li>  <li class="stock">In stock: <strong>{tag_instock}</strong>&nbsp;</li>  <li class="quantity">Qty: <strong>{tag_addtocartinputfield}</strong> {tag_addtocart}</li>  </ul>  </div>    
+<div class="small-products">
+	<ul>
+   	<li>
+      	<hr />
+      	<div class="image layout-one-half">{tag_smallimage}</div>
+         <div class="content layout-one-half">
+         	<h2>{tag_name}</h2>
+            <p>{tag_description}</p>
+            <div>{tag_grouping}</div>
+            <ul>
+               <li>Price: <strong>{tag_saleprice}</strong>&nbsp;</li>
+               <li>Qty: <strong>{tag_addtocartinputfield}</strong> {tag_addtocart}</li>
+            </ul>
+         </div>
+         <br class="clear" /><!--restore document flow-->
+         <hr />
+      </li>
+   </ul>
+</div><!--END class="small-products"-->

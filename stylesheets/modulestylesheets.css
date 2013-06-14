@@ -96,9 +96,9 @@ table.webform td {
 	padding: 6px;
 }
 
-.form label, .webform label {
+/*.form label, .webform label {
 	font-size: 11px;
-}
+}*/
 
 .form input, .webform input {
 	margin-right: 3px;
