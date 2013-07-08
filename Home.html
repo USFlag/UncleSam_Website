@@ -11,37 +11,42 @@
 </head>
 <div class="flexslider">
    <ul class="slides">
-      <li id="feather-flag-slider"> 
-      	<div class="slide-img"><img src="Assets/img/products/feather_dancer.png" width="465" height="675" alt="The Feather Dancer" /></div> 
+   	<li id="us-flag-slider">
+     		<img src="Assets/img/products/cta/usflag-cta.jpg" width="968" height="250" alt="US Flags">
          <div class="slide-content">
-            <h2>Eye Catching</h2>
-            <p>Captivate and invite new customers with the Feather Dancer.</p>
-            <a href="/shop/flags/feather-dancer">SHOP</a>
-         </div><!--END class="slide-content"-->
+         	<h2>US Flags</h2>
+            <span class="slider-ornament"></span>
+         	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. <a href="shop/flags/us">SHOP US FLAGS</a></p>
+         </div>
+      </li><!--END id="us-flag"-->
+      <li id="feather-flag-slider"> 
+     		<img src="Assets/img/products/cta/dancer-cta.jpg" width="968" height="250" alt="Feather Dancer">
+         <div class="slide-content">
+         	<h2>Feather Flags</h2>
+         	<span class="slider-ornament"></span>
+         	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. <a href="shop/flags">SHOP FEATHER FLAGS</a></p>
+      	</div>
       </li><!--END id="feather-flag"-->
       <li id="banner-slider">
+         <img src="Assets/img/products/cta/banner-cta.jpg" width="968" height="250" alt="Banners">
          <div class="slide-content">
-            <h2>High Quality Banners</h2>
-            <div class="slide-img"><img src="Assets/img/products/your_message.jpg" width="700"  alt="Your Message Goes Here Banner" id="banner" /></div>
-            <p>Get your message out with one of our high quality banners.</p>
-            <a href="/shop/banners">SHOP</a>
-         </div><!--END class="slide-content"-->
+         	<h2>Banners</h2>
+         	<span class="slider-ornament"></span>
+         	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. <a href="shop/banners">SHOP BANNERS</a></p> 
+      	</div>
       </li><!--END id="banner"-->
-      <li id="us-flag-slider">
-      	<div class="slide-img"><img src="Assets/img/products/us_flag.png" width="413" height="499" alt="US Flag" /></div> 
-         <div class="slide-content">
-            <h2>American Made</h2>
-            <p>Fly the best US Flags available and take pride in this great nation.</p>
-            <a href="/shop/flags/US">SHOP</a>
-         </div><!--END class="slide-content"-->
-         <br class="clear" /><!--restore document flow-->
-      </li><!--END id="us-flag"-->
    </ul><!--END class="slides"-->
 </div><!--END class="flexslider"-->
 <br class="clear" /><!--restore document flow-->
 <div id="home">
-	{module_catalogue,203212,}
-   {module_catalogue,204048,}
+	<div class="featured-items"></div><!--END class="featured-items"-->
+	<div class="featured-products"><!--<h2>Featured Products</h2>--></div><!--END class="featured-products"-->
+	<div class="featured-catalogs">
+   	<h2>Featured Catalogs</h2>
+		{module_catalogue,203212,}
+   	<hr />
+   	{module_catalogue,204048,}
+   </div><!--END class="featured-catalogs"-->
 </div><!--END id="home"-->
 <script>
 	$(".catalogs:odd .layout-one-half").removeClass("layout-one-half").addClass("layout-one-half-right");

@@ -107,6 +107,8 @@ p { font-family: "Open Sans", Helvetica, Arial, Verdana; font-size: 13px; text-a
 #home a { color: #3487c3; }
 #home a:hover { color: #d8182c; }
 #home hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+#home h2 { color: #3487c3; margin: 30px; }
+
 /*featherflags.html*/
 #feather-flag-spotlight { /*background-image: url(../img/dividers/page-shadow-divider-sm.png); background-repeat: no-repeat; background-position: center bottom; padding-bottom: 50px;*/ position: relative; }
 #feather-flag-spotlight .product-img { margin-left: 75px; }
@@ -219,28 +221,20 @@ h2.search-header { color: #3487c3; padding: 30px 0 0 30px; }
 /*  8.  Alert Messages ----------------- */
 /*  9.  Tabbed Panels and Slider ------- */
 /*-- Slider --*/
-.flex-slider { height: 375px; }
+#home .catalogs hr { display: none; }
+.slider-ornament { background-image: url(../img/products/cta/flexslider-ornament.png); background-repeat:no-repeat; display: block; height: 25px; margin: 5px auto; width: 130px; }
 #feather-flag-slider { position: relative; }
-#feather-flag-slider .slide-img { margin-left: 75px; height: 350px }
-#feather-flag-slider .slide-content { position: absolute; top: 230px; left: 500px; width: 400px; }
-#feather-flag-slider .slide-content h2 { margin: 5px 0; }
-#feather-flag-slider .slide-content p { margin: 10px 0 15px 0; text-align: left; }
-#banner-slider { }
-#banner-slider .slide-content { margin-top: 100px; }
-#banner-slider .slide-content h2 { margin: 20px auto; text-align: center; width: 700px; }
-#banner-slider .slide-img { margin: 30px auto; width: 700px }
-#banner-slider .slide-content p { margin: 20px auto; text-align: center; width: 400px; }
-#banner-slider .slide-content a { margin: 20px auto; }
-#us-flag-slider { padding-top: 100px; }
-#us-flag-slider .slide-img { float: left; padding: 0 30px; width: 360px; }
-#us-flag-slider .slide-content { float: left; margin: 100px 0 0 0; padding: 0 30px; width: 488px; }
-#us-flag-slider .slide-content h2 { margin: 20px auto 5px auto; text-align: center; width: 445px; }
-#us-flag-slider .slide-content p { margin: 5px auto 15px auto; text-align: center; width: 400px; }
-#us-flag-slider .slide-content a { margin: 20px auto; }
-.flexslider h2 { font-size: 60px; font-weight: 200; }
-.flexslider p { font-family: "Raleway", Helvetica, Arial, Verdana; font-size: 25px; font-weight: 200; }
-.flexslider a { background-color: #3487c3; background-image: url(../img/backgrounds/patterns/2.png); -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; border: 2px solid #fff; -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.35); -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.35); box-shadow: 0px 3px 5px rgba(0,0,0,0.35); display: block; font-family: "Anton", Impact, Helvetica, Arial, Verdana; font-size: 22px; line-height: 40px; height: 40px; text-align: center; width: 120px; }
-.flexslider a:hover { background-color: #555; color: #fff; }
+#banner-slider { position: relative; }
+#us-flag-slider { position: relative; }
+.slide-content { left: 630px; top: 30px; position: absolute; width: 308px; }
+.slide-content h2 { text-align: center; }
+.slide-content p { text-align: center; }
+.slide-content a { display: block; margin: 15px auto; font-family: "Roboto Slab", Helvetica, Arial, Verdana, serif; font-weight: 400; font-size: 15px; }
+.flexslider { color: #fff; }
+.flexslider h2 { font-family: "Roboto Slab", Helvetica, Arial, Verdana, serif; font-weight: 400; font-size: 40px; }
+.flexslider p { font-family: "Open Sans", Helvetica, Arial, Verdana; font-size: 15px; font-weight: 400; }
+.flexslider a { color: #fff; /* button style... background-color: #3487c3; background-image: url(../img/backgrounds/patterns/2.png); -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; border: 2px solid #fff; -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.35); -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.35); box-shadow: 0px 3px 5px rgba(0,0,0,0.35); display: block; font-family: "Anton", Impact, Helvetica, Arial, Verdana; font-size: 22px; line-height: 40px; height: 40px; text-align: center; width: 120px;*/ }
+.flexslider a:hover { color: #fff; text-decoration: underline; }
 /*Tabbd Panels*/
 /*See spry style sheet*/
 

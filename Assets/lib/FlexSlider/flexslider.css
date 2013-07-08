@@ -21,7 +21,8 @@
 
 /* FlexSlider Necessary Styles
 *********************************/ 
-.flexslider { background-image: url(../../img/dividers/page-shadow-divider-sm.png); background-repeat: no-repeat; background-position: center bottom; margin: 0; padding: 0; padding-bottom: 65px; }
+/*.flexslider { background-image: url(../../img/dividers/page-shadow-divider-sm.png); background-repeat: no-repeat; background-position: center bottom; margin: 0; padding: 0; padding-bottom: 65px; }*/
+.flexslider {  }
 .flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides img {/*width: 100%;*/ display: block;}/*!!!!!!!!!*/
 .flex-pauseplay span {text-transform: capitalize;}
@@ -39,7 +40,8 @@ html[xmlns] .slides {display: block;}
 
 /* FlexSlider Default Theme
 *********************************/
-.flexslider {margin: 0 0 60px; /*background: #fff;*//*!!!!!!!!!*/ /*border: 4px solid #fff;*//*!!!!!!!!!*/ position: relative; /*-webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px;*/ /*box-shadow: 0 1px 4px rgba(0,0,0,.2); -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); -o-box-shadow: 0 1px 4px rgba(0,0,0,.2);*//*!!!!!!!!!*/ zoom: 1;}
+.flexslider { margin: 30px 0 0 0; /*background: #fff;*//*!!!!!!!!!*/ /*border: 4px solid #fff;*//*!!!!!!!!!*/ position: relative; /*-webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px;*/ /*box-shadow: 0 1px 4px rgba(0,0,0,.2); -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); -o-box-shadow: 0 1px 4px rgba(0,0,0,.2);*//*!!!!!!!!!*/ zoom: 1;}
+.flexslider { background-color: #d8182c; border-bottom: 1px solid #e0e0e6; border-top: 1px solid #e0e0e6; height: 250PX; }
 .flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
 .loading .flex-viewport {max-height: 300px;}
 .flexslider .slides {zoom: 1;}
@@ -58,7 +60,7 @@ html[xmlns] .slides {display: block;}
 .flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
 
 /* Control Nav */
-.flex-control-nav {width: 100%; position: absolute; /*bottom: -40px;*/bottom: 30px; text-align: center;}
+.flex-control-nav {width: 100%; position: absolute; /*bottom: -40px;*/bottom: 10px; text-align: center;}
 .flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
 .flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0 0 3px rgba(0,0,0,0.3);}
 .flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
