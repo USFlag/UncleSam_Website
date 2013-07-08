@@ -219,9 +219,8 @@ h2.search-header { color: #3487c3; padding: 30px 0 0 30px; }
 /*  8.  Alert Messages ----------------- */
 /*  9.  Tabbed Panels and Slider ------- */
 /*-- Slider --*/
-.flex-slider { height: 375px; }
 #feather-flag-slider { position: relative; }
-#feather-flag-slider .slide-img { margin-left: 75px; height: 350px }
+#feather-flag-slider .slide-img { margin-left: 75px; }
 #feather-flag-slider .slide-content { position: absolute; top: 230px; left: 500px; width: 400px; }
 #feather-flag-slider .slide-content h2 { margin: 5px 0; }
 #feather-flag-slider .slide-content p { margin: 10px 0 15px 0; text-align: left; }
