@@ -2,42 +2,34 @@
 	<link href="/Assets/lib/SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css">
    <script src="/Assets/lib/SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
 </head>
-<div>
-   <hr />
-   <div class="img">{tag_largeimage}</div>
-   
-   <div class="content">
-      <h2>{tag_name}</h2>
-      <div>{tag_description}{tag_attributes}</div><span>{tag_productcode}</span>
-      <span>{tag_grouping}</span>
-      <!--<div>{tag_grouping}</div>-->
-      <ul>
-         <li><strong>{tag_saleprice}</strong></li>
-         <li>{tag_poplets}</li>
-         <li>{tag_addtocartinputfield} {tag_addtocart,<img alt="Add To Cart" src="/CatalystImages/shop_addtocart.png" />}</li>
-      </ul>
-      <div id="TabbedPanels1" class="TabbedPanels">
-         <ul class="TabbedPanelsTabGroup">
-            <li class="TabbedPanelsTab" tabindex="0">Details</li>
-            <li class="TabbedPanelsTab" tabindex="0">Custom Flags</li>
-            <li class="TabbedPanelsTab" tabindex="0">FAQs</li>
+<hr />
+<div class="large-product">
+   <div class="{tag_tags}">
+      
+      <div class="img">{tag_largeimage}</div>
+      
+      <div class="content">
+         <ul>
+         	<li class="name-description-code-cart">
+            	<h2 class="product-name">{tag_name}<strong>&nbsp;&#8212;&nbsp;{tag_saleprice}</strong></h2>
+            	<p class="product-description">{tag_description}</p>
+               <div class="product-grouping">Options: <br /><br /> {tag_grouping}</div>
+               <b class="product-code">Product Code: {tag_productcode}</b>
+               <p class="add-to-cart">{tag_addtocartinputfield} {tag_addtocart}</p>
+               <!--<div class="product-poplets-flag"><h3>Related Images</h3>{tag_poplets}</div>-->
+            </li>
+         	<li class="panels-poplets">
+            	<div class="product-panels">{tag_custom1}</div>
+               <div class="product-poplets-banners"><h3>Related Images</h3>{tag_poplets}</div>
+            </li>
+            <li class="clear"></li>
          </ul>
-         <div class="TabbedPanelsContentGroup">
-            <div class="TabbedPanelsContent">
-               <p>Lorem ipsum dolor sit amelaoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-            </div>
-            <div class="TabbedPanelsContent">
-               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod t tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-            </div>
-            <div class="TabbedPanelsContent">
-               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tro eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-            </div>
-         </div><!--END class="TabbedPanelsContentGroup"-->
-      </div><!--END id="TabbedPanels1"-->
+      </div>
+      <br class="clear" /><!--restore document flow-->
    </div>
-   <br class="clear" /><!--restore document flow-->
-   <hr />
 </div>
-<script type="text/javascript">
-var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+<hr />
+<script>
+	
+	
 </script>

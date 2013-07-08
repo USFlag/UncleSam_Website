@@ -1,64 +1,82 @@
-
-<div class="shop-cart">
-<div class="breadcrumbs">You are here: {tag_cataloguebreadcrumbs}</div>
-<h1>Your Shopping Cart</h1>
-<table class="cart">
-		<tr class="var">
-			<th>Product</th>
-			<th>Price</th>
-			<th class="quantity">Quantity</th>
-			<th>Tax</th>
-			<th>Total</th>
-			<th>Remove</th>
-		</tr>
-		<tr class="val">
-			<td>{tag_productname}</td>
-			<td>{tag_productextaxamount}</td>
-			<td class="quantity">{tag_productquantity}</td>
-			<td>{tag_producttaxrate}</td>
-			<td>{tag_producttotal}</td>
-			<td>{tag_productremovelink}</td>
-		</tr>
-		<tr class="sub-total">
-			<td colspan="2">Sub-Total</td>
-			<td class="quantity">{tag_totalunits} units</td>
-			<td>&nbsp;</td>
-			<td>{tag_productgrandtotal}</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr class="discount">
-			<td>Discount</td>
-			<td colspan="2" class="quantity">{tag_discountcode}<input class="update" onClick="return false;" type="button" value="Update" /></td>
-			<td>&nbsp;</td>
-			<td>({tag_invoicediscountamount})</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr class="giftvoucher">
-			<td>Gift Voucher</td>
-			<td colspan="2" class="quantity">{tag_giftvoucher}<input class="update" onClick="return false;" type="button" value="Update" /></td>
-			<td>&nbsp;</td>
-			<td>({tag_giftvoucheramount})</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr class="shipping">
-			<td>Shipping</td>
-			<td colspan="2" class="quantity">{tag_shippingoptions,,OnlyChargeCountryUsers,US,,,}</td>
-			<td>&nbsp;</td>
-			<td>{tag_shippingtotal}</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr class="total">
-			<td colspan="2"><strong>Total</strong></td>
-			<td>&nbsp;</td>
-			<td>&nbsp;</td>
-			<td><strong>{tag_invoicetotal}</strong></td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td colspan="6">&nbsp;</td>
-		</tr>
-		<tr>
-			<td class="actions" colspan="6"> {tag_clearcartbutton,<img src="/CatalystImages/shop_clearcart.png" />} {tag_getquotebutton,<img src="/CatalystImages/shop_getaquote.png" />} {tag_buybutton,<img src="/CatalystImages/shop_checkout.png" />}</td>
-		</tr>
-</table>
-</div>
+<div class="shopping-cart">
+   	<div class="shop-utility-nav">
+         <div class="breadcrumbs">
+            <span>You are here:</span> <span class="crumbs">{tag_cataloguebreadcrumbs}</span> <span class="shopping-cart-crumb">: shopping cart</span>
+         </div><!--END class="breadcrumbs"--> 
+         <br class="clear" />
+      </div><!--END class="shop-utility-nav"-->
+   <h2>Your Shopping Cart</h2>
+	<div class="product-detail-container">
+      <div id="cart-details-header">
+         <div class="product-name">PRODUCT</div>
+         <div class="price">PRICE</div>
+         <div class="quantity">QUANTITY</div>
+         <div class="tax">TAX</div>
+         <div class="total">TOTAL</div>
+         <div class="remove">REMOVE</div>
+         <br class="clear" />
+      </div><!--END id="cart-details-header"-->
+      <div id="product-summary">
+         <div class="product-name">{tag_productname}</div>
+         <div class="product-image">{tag_productimage}</div>
+         <div class="price">{tag_productextaxamount}</div>
+         <div class="quantity">{tag_productquantity}</div>
+         <div class="tax">{tag_producttaxrate}</div>
+         <div class="total">{tag_producttotal}</div>
+         <div class="remove">{tag_productremovelink}</div>
+         <br class="clear" /><!--restore document flow-->
+      </div><!--END id="product-summary"-->
+      <div id="sub-total">
+      	<div class="sub-total-text">Sub-Total</div> 
+         <div class="total-units">{tag_totalunits} in shopping cart </div>
+         <div class="grand-total">{tag_productgrandtotal}</div>
+         <div class="update-cart"><a href="#" onclick="return false;">Update</a></div>
+      </div>
+      <div id="discounts-and-shipping">
+      	<div class="shipping">
+         	{tag_shippingoptions,true,OnlyChargeCountryUsers,US,,,}
+            <br class="clear" /><!--restore document flow-->
+            <div class="shipping-total">Total Shipping Cost: <b>{tag_shippingtotal}</b></div>
+            <br class="clear" /><!--restore document flow-->
+         </div><!--END class="shipping"-->
+         <div class="discounts">
+         	<h2>Did you know about US Flag and Banner price breaks? <a href="#">Find out more!</a></h2>
+            <hr />
+            <h3>Already have a discount code? You can use it here...{tag_discountcode}<a href="#" onclick="return false;">Update</a>&nbsp;&nbsp;(-{tag_invoicediscountamount})</h3>
+         </div><!--END class="discounts"-->
+         <br class="clear" /><!--restore document flow-->
+      </div><!--END id="discounts-and-shipping"-->
+      <div class="returning-customer-login">
+            <h3>Returning Customers Checkout Here!</h3><br />
+            <form name="catseczoneform59527" onsubmit="return checkWholeForm59527(this)" method="post" action="https://usflagandbanner.worldsecuresystems.com/ZoneProcess.aspx?ZoneID=-1&Referrer={module_siteUrl,true,true}&OID={module_oid}&OTYPE={module_otype}">
+               <div class="login-username">
+               	<label for="SZUsername">Username</label>
+               	<input class="cat_textbox_small" type="text" name="Username" id="SZUsername" maxlength="255" />
+               </div><!--END class="username"-->
+               <div class="login-password">
+               	<label for="SZPassword">Password</label>
+               	<input class="cat_textbox_small" type="password" name="Password" id="SZPassword" maxlength="255" autocomplete="off" />
+               </div><!--END class="password"-->
+               <br class="clear" /><!--restore document flow-->
+               <input class="login-submit" type="submit" value="log in" />
+               <a href="/_System/SystemPages/PasswordRetrieveRequest">&nbsp;&nbsp;Lost password?</a>
+            </form>
+         </div><!--END class="returning-customer-login"-->
+      <div id="shopping-cart-total">Total {tag_invoicetotal}</div><!--END id="shopping-cart-total"-->
+      <div id="shopping-cart-buy"><!--{tag_clearcartbutton, Clear Cart}--> {tag_buybutton,Check Out,true}</div><!--END id="shopping-cart-buy"-->
+  		<br class="clear" /><!--restore document flow-->
+   </div><!--END class="product-detail-container"-->
+</div><!--END class="shopping-cart"-->
+<script type="text/javascript">
+var sel = document.getElementById('ShippingOptions')
+	for(var i=sel.options.length-1;i>=0;i--)
+	{
+	if(sel.options[i].value == "-1")
+		 sel.options[i].text = "Please Select";
+	}
+</script>
+<script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script><script type="text/javascript">
+	//<![CDATA[
+	function checkWholeForm59527(theForm){var why = "";if (theForm.Username) why += isEmpty(theForm.Username.value, "Username");if (theForm.Password) why += isEmpty(theForm.Password.value, "Password");if (why != ""){alert(why);return false;}theForm.submit();return false;}
+	//]]>
+</script>

@@ -1,19 +1,17 @@
 <div class="small-products">
-	<ul>
+	<ul class="{tag_tags}">
    	<li>
       	<hr />
-      	<div class="image layout-one-half">{tag_smallimage}</div>
-         <div class="content layout-one-half">
-         	<h2>{tag_name}</h2>
-            <p>{tag_description}</p>
-            <div>{tag_grouping}</div>
-            <ul>
-               <li>Price: <strong>{tag_saleprice}</strong>&nbsp;</li>
-               <li>Qty: <strong>{tag_addtocartinputfield}</strong> {tag_addtocart}</li>
-            </ul>
-         </div>
-         <br class="clear" /><!--restore document flow-->
-         <hr />
+      	<div class="small-product-wrapper">
+				<div class="image layout-one-half">{tag_smallimage}</div>
+            <div class="content layout-one-half">
+               <h2>{tag_name}<strong>&nbsp;&#8212;&nbsp;{tag_saleprice}</strong></h2>
+               <p>{tag_description}</p>
+               <!--<div>{tag_grouping}</div>-->
+               <span class="more-info-btn">{tag_button,More Info}</span>
+            </div>
+            <br class="clear" /><!--restore document flow-->
+			</div>
       </li>
    </ul>
 </div><!--END class="small-products"-->

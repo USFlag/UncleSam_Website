@@ -18,6 +18,7 @@
  */
 .CollapsiblePanel {
 	margin: 0px;
+	margin-left: 15px;
 	padding: 0px;
 	/*border-left: solid 1px #CCC;
 	border-right: solid 1px #999;
@@ -43,7 +44,7 @@
 	color: #3487c3;
 	margin: 0px;
 	padding: 2px;
-	padding-left: 50px;
+	padding-left: 40px;
 	cursor: pointer;
 	-moz-user-select: none;
 	-khtml-user-select: none;

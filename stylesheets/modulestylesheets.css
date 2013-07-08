@@ -64,7 +64,7 @@ input.cat_textbox,
 textarea.cat_listbox,
 select.cat_dropdown,
 select.cat_listbox {
-	width: 300px;
+	/*width: 300px;*/
 }
 
 .cat_dropdown_small {
@@ -502,10 +502,10 @@ table.module-calendar td.next-month {
 }
 
 table.cartSummaryTable {
-	border-collapse:collapse;
+	/*border-collapse:collapse;
 	border-spacing:0;	
 	font-size: 12px;
-	float: right;
+	float: right;*/
 }
 
 td.cartSummaryItem {
@@ -696,7 +696,7 @@ td.productItem .comment-form input#Captcha {
 table.productPoplets {
 	border-collapse:collapse;
 	border-spacing:0;	
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 }
 
 .shop-product-large .details {
@@ -719,7 +719,7 @@ table.productPoplets {
 }
 
 .shop-cart .breadcrumbs {
-	margin: 0 0 18px;
+	margin: 0 0 0 30px;
 }
 
 table.cart {
@@ -770,15 +770,17 @@ table.cart th {
 }
 
 input.cartInputText {
-	width: 70px;
+	width: 40px;
 }
 
 input#DiscountCode, input#GiftVoucher {
-	width: 70px;
+	height: 22px;
+	width: 100px;
+	margin: 0 15px;
 }
 
 select.shippingDropDown {
-	width: 150px;
+	width: 170px;
 }
 
 table.cart th.quantity {
@@ -790,10 +792,10 @@ table.cart td.quantity {
 }
 
 .productitemcell {
-	height: 23px;
+	/*height: 23px;
 	line-height: 20px;
 	margin: 0 0 3px 0;
-	overflow: hidden;
+	overflow: hidden;*/
 }
 
 table.cart td.actions {

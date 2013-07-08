@@ -1,82 +1,66 @@
 <div id="account-page">
-	<div class="layout-two-third">
-   	<form class="form" name="catupdatedetailsformform53938" method="post" enctype="multipart/form-data" onsubmit="return checkWholeForm53938(this)" action="/MemberProcess.aspx">
-      <b class="required">(Required Information)</b><!--END class="required"-->
-      <ul class="form-fields">
-         <li>
-            <div>
-               <label for="FirstName">First Name<b class="required">&nbsp;(Required)</b><!--END class="required"--></label>
+	<div class="layout-full">
+   	<!--<div>
+      	<h2>Hello! {module_firstname}, {module_logout}</h2>
+      </div>
+   	<div id="account-purchase-history">
+      	{module_order,a,,Default}{module_case,a,,Default}
+      </div>--><!--END id="account-purchase-history"-->
+      <form class="form" name="catupdatedetailsformform53938" method="post" enctype="multipart/form-data" onsubmit="return checkWholeForm53938(this)" action="/MemberProcess.aspx">
+      <!--<b class="required">(Required Information)</b>--><!--END class="required"-->
+      <div id="account-personal-info">
+      	<h2>Personal Information</h2>
+         <hr />
+      	<ul>
+         	<li>
+            	<label for="FirstName">First Name<b class="required">&nbsp;(Required)</b><!--END class="required"--></label>
                <input type="text" name="FirstName" id="FirstName" maxlength="255" value="{module_firstname}" />
-            </div>
-            <div>
-               <label for="LastName">Last Name<b class="required">&nbsp;(Required)</b><!--END class="required"--></label>
+            </li>
+            <li>
+            	<label for="LastName">Last Name<b class="required">&nbsp;(Required)</b><!--END class="required"--></label>
                <input type="text" name="LastName" id="LastName" maxlength="255" value="{module_lastname}" />
-            </div>
-            <br class="clear" /><!--restore document flow--> 
-         </li>
-         <li>
-         	<div>
+            </li>
+            <br class="clear" /><!--restore document flow-->
+            <li>
             	<label for="EmailAddress">Email Address<b class="required">&nbsp;(Required)</b><!--END class="required"--></label>
                <input type="text" name="EmailAddress" id="EmailAddress" value="{module_emailaddress}" maxlength="255" />
-            </div>
-            <div>
-            	<label for="Company">Company</label>
-               <input type="text" name="Company" id="Company" value="{module_company}" class="cat_textbox" maxlength="255" />
-            </div>
+            </li>
+            <li>&nbsp;</li>
             <br class="clear" /><!--restore document flow-->
-         </li>
-         <li>
-         	<div>
-            	<label for="WorkPhone">Work Phone Number</label>
-               <input type="text" name="WorkPhone" id="WorkPhone" value="{module_workphone}" class="cat_textbox" maxlength="255" />
-            </div>
-            <div>
-            	<label for="WorkFax">Work Fax Number</label>
-               <input type="text" name="WorkFax" id="WorkFax" value="{module_workfax}" class="cat_textbox" maxlength="255" />
-            </div>
-            <br class="clear" /><!--restore document flow-->
-         </li>
-         <li>
-         	<div>
+            <h3>Phone</h3>
+         	<hr />
+            <li>
             	<label for="HomePhone">Home Phone Number</label>
                <input type="text" name="HomePhone" id="HomePhone" value="{module_homephone}" class="cat_textbox" maxlength="255" />
-            </div>
-            <div>
+            </li>
+            <li>
             	<label for="CellPhone">Cell Phone Number</label>
                <input type="text" name="CellPhone" id="CellPhone" value="{module_cellphone}" class="cat_textbox" maxlength="255" />
-            </div>
+            </li>
             <br class="clear" /><!--restore document flow-->
-         </li>
-         <li>
-         	<div>
-            	<label for="WebAddress">Web Address</label>
-               <input type="text" name="WebAddress" id="WebAddress" value="{module_webaddress}" class="cat_textbox" maxlength="255" />
-            </div>
-            <div>
+            <h3>Home Address</h3>
+         	<hr />
+            <li>
             	<label for="HomeAddress">Home Address</label>
                <input type="text" name="HomeAddress" id="HomeAddress" value="{module_homeaddress}" class="cat_textbox" maxlength="500" />
-            </div>
-            <br class="clear" /><!--restore document flow-->
-         </li>
-         <li>
-         	<div>
+            </li>
+            <li>
             	<label for="HomeCity">City</label>
                <input type="text" name="HomeCity" id="HomeCity" value="{module_homecity}" class="cat_textbox" maxlength="255" />
-            </div>
-            <div>
+            </li>
+            <br class="clear" /><!--restore document flow-->
+            <li>
             	<label for="HomeState">State</label>
                <input type="text" name="HomeState" id="HomeState" value="{module_homestate}" class="cat_textbox" maxlength="255" />
-            </div>
-            <br class="clear" /><!--restore document flow-->
-         </li>
-         <li>
-         	<div>
+            </li>
+            <li>
             	<label for="HomeZip">Zipcode/Postcode</label>
                <input type="text" name="HomeZip" id="HomeZip" value="{module_homezip}" class="cat_textbox" maxlength="255" />
-            </div>
-            <div>
+            </li>
+            <br class="clear" /><!--restore document flow-->
+            <li>
             	<label for="HomeCountry">Country</label>
-               <select name="HomeCountry" id="HomeCountry" class="cat_dropdown">
+               <select value="{module_homecountry}" name="HomeCountry" id="HomeCountry" class="cat_dropdown">
                   <option value=" ">-- Select Country --</option>
                   <option value="AF">AFGHANISTAN</option>
                   <option value="AX">ALAND ISLANDS</option>
@@ -325,35 +309,57 @@
                   <option value="ZM">ZAMBIA</option>
                   <option value="ZW">ZIMBABWE</option>
                </select>
-            </div>
+            </li>
             <br class="clear" /><!--restore document flow-->
-         </li>
-         <li>
-         	<div>
+         </ul>
+      </div><!--END id="register-personal-info"-->
+      <div id="account-company-info">
+      	<h2>Company Information</h2>
+         <hr />
+      	<ul>
+         	<li>
+            	<label for="Company">Company</label>
+         		<input type="text" name="Company" id="Company" value="{module_company}" class="cat_textbox" maxlength="255" />
+            </li>
+            <li>
+            	<label for="WebAddress">Web Address</label>
+               <input type="text" name="WebAddress" id="WebAddress" value="{module_webaddress}" class="cat_textbox" maxlength="255" />
+            </li>
+            <br class="clear" /><!--restore document flow-->
+            <h3>Phone</h3>
+         	<hr />
+            <li>
+            	<label for="WorkPhone">Work Phone Number</label>
+               <input type="text" name="WorkPhone" id="WorkPhone" value="{module_workphone}" class="cat_textbox" maxlength="255" />	
+            </li>
+            <li>
+            	<label for="WorkFax">Work Fax Number</label>
+               <input type="text" name="WorkFax" id="WorkFax" value="{module_workfax}" class="cat_textbox" maxlength="255" />
+            </li>
+            <br class="clear" /><!--restore document flow-->
+            <h3>Address</h3>
+         	<hr />
+            <li>
             	<label for="WorkAddress">Work Address</label>
                <input type="text" name="WorkAddress" id="WorkAddress" value="{module_workaddress}" class="cat_textbox" maxlength="500" />
-            </div>
-            <div>
+            </li>
+            <li>
             	<label for="WorkCity">City</label>
                <input type="text" name="WorkCity" id="WorkCity" value="{module_workcity}" class="cat_textbox" maxlength="255" />
-            </div>
+            </li>
             <br class="clear" /><!--restore document flow-->
-         </li>
-         <li>
-         	<div>
+            <li>
             	<label for="WorkState">State</label>
                <input type="text" name="WorkState" id="WorkState" value="{module_workstate}" class="cat_textbox" maxlength="255" />
-            </div>
-            <div>
+            </li>	
+            <li>
             	<label for="WorkZip">Zipcode/Postcode</label>
                <input type="text" name="WorkZip" id="WorkZip" value="{module_workzip}" class="cat_textbox" maxlength="255" />
-            </div>
+            </li>
             <br class="clear" /><!--restore document flow-->
-         </li>
-         <li>
-         	<div>
+           	<li>
             	<label for="WorkCountry">Country</label>
-               <select name="WorkCountry" id="WorkCountry" class="cat_dropdown">
+               <select value="{module_workcountry}" name="WorkCountry" id="WorkCountry" class="cat_dropdown">
                   <option value=" ">-- Select Country --</option>
                   <option value="AF">AFGHANISTAN</option>
                   <option value="AX">ALAND ISLANDS</option>
@@ -602,45 +608,54 @@
                   <option value="ZM">ZAMBIA</option>
                   <option value="ZW">ZIMBABWE</option>
                </select>
-            </div>
-            <div></div>
+            </li>
             <br class="clear" /><!--restore document flow-->
-         </li>
-         <li>
-         	<div>
+         </ul>
+      </div><!--END id="account-company-info"-->
+      <div id="account-account-info">
+      	<h2>Login Information</h2>
+         <hr />
+      	<ul>
+         	<li>
             	<label for="Username">Username</label>
                <input type="text" name="Username" id="Username" value="{module_username}" class="cat_textbox" maxlength="255" />
-            </div>
-            <div></div>
-            <div>
+            </li>
+            <li>&nbsp;</li>
+            <br class="clear" /><!--restore document flow-->
+            <hr />
+            <li>
             	<label for="Password">Password</label>
                <input type="password" name="Password" id="Password" value="{module_password}" class="cat_textbox" maxlength="255" autocomplete="off" />
-            </div>
-            <div>
+            </li>
+            <li>
             	<label for="PasswordConfirm">Confirm Password</label>
                <input type="password" name="PasswordConfirm" id="PasswordConfirm" value="{module_password}" class="cat_textbox" maxlength="255" autocomplete="off" />
-            </div>
+            </li>
             <br class="clear" /><!--restore document flow-->
-         </li>
-         <li>
-         	<input type="hidden" name="FormID" id="FormID" />
-         </li>
-         <li>
-         	<input class="cat_button" type="submit" value="Submit" id="catupdatedetailsformbutton" />
-         </li>
-      </ul><!--END class="form-fields"-->
-      
+            <li><input type="hidden" name="FormID" id="FormID" /></li>
+         </ul>
+      </div><!--END id="account-account-info"--> 
+      <div id="account-submit">
+      	<input class="cat_button" type="submit" value="Submit" id="catupdatedetailsformbutton" />
+      </div><!--END id="account-submit"-->      	
 		<script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script> 
       <script type="text/javascript" src="/CatalystScripts/Java_DatePicker.js"></script> 
       <script type="text/javascript">
-      //<![CDATA[
-      if (document.getElementById('Title') != null) document.getElementById('Title').value = '{module_title}'; if (document.getElementById('HomeCountry') != null) document.getElementById('HomeCountry').value = '{module_homecountry}'; if (document.getElementById('WorkCountry') != null) document.getElementById('WorkCountry').value = '{module_workcountry}'; var submitcount53938 = 0;function checkWholeForm53938(theForm){var why = "";if (theForm.FirstName) why += isEmpty(theForm.FirstName.value, "First Name");if (theForm.LastName) why += isEmpty(theForm.LastName.value, "Last Name"); if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value); if (theForm.Password && theForm.PasswordConfirm) { if (theForm.Password.value.length > 0 || theForm.PasswordConfirm.value.length > 0) { if (theForm.Password.value != theForm.PasswordConfirm.value) why += appendBreak("- Password and its confirmation do not match."); if (theForm.Password.value.length < 6) why += appendBreak("- Password must be 6 characters or longer."); }} if(why != ""){alert(why);return false;}if(submitcount53938 == 0){submitcount53938++;theForm.submit();return false;}else{alert("Form submission is in progress.");return false;}}
-      //]]>
+			//<![CDATA[
+			if (document.getElementById('Title') != null) document.getElementById('Title').value = '{module_title}'; 
+			if (document.getElementById('HomeCountry') != null) document.getElementById('HomeCountry').value = '{module_homecountry}'; 
+			if (document.getElementById('WorkCountry') != null) document.getElementById('WorkCountry').value = '{module_workcountry}'; var submitcount53938 = 0;function checkWholeForm53938(theForm){var why = "";
+			if (theForm.FirstName) why += isEmpty(theForm.FirstName.value, "First Name");if (theForm.LastName) why += isEmpty(theForm.LastName.value, "Last Name"); 
+			if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value); if (theForm.Password && theForm.PasswordConfirm) { if (theForm.Password.value.length > 0 || theForm.PasswordConfirm.value.length > 0) { if (theForm.Password.value != theForm.PasswordConfirm.value) why += appendBreak("- Password and its confirmation do not match."); 
+			if (theForm.Password.value.length < 6) why += appendBreak("- Password must be 6 characters or longer."); }} if(why != ""){alert(why);return false;}
+			if(submitcount53938 == 0){submitcount53938++;theForm.submit();return false;}else{alert("Form submission is in progress.");return false;}}
+			//]]>
       </script>
    </form>
-   </div><!--END class="layout-two-third"-->
-   <div class="layout-one-third"></div><!--END class="layout-two-third"-->
+   </div><!--END class="layout-full"-->
    <br class="clear" /><!--restore document flow-->
 </div><!--END id="account-page"-->
-
+<script>
+	$("#account-personal-info li:even, #account-company-info li:even, #account-account-info li:even").css("margin-right", "30px");
+</script>
 
