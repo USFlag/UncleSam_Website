@@ -39,10 +39,81 @@
 </div><!--END class="flexslider"-->
 <br class="clear" /><!--restore document flow-->
 <div id="home">
-	<div class="featured-items"></div><!--END class="featured-items"-->
-	<div class="featured-products"><!--<h2>Featured Products</h2>--></div><!--END class="featured-products"-->
+	<hr />
+	<div class="featured-items">
+   	<div class="free-shipping">
+      	<h2>Free Shipping</h2>
+         <span class="slider-ornament"></span>
+         <p>Free shipping on orders over $99!</p>
+      </div><!--END class="featured-items"-->
+      <div class="about-cta">
+      	<h2>US Flag and Banner?</h2>
+         <span class="slider-ornament"></span>
+         <p>Why choose US Flag and Banner...<a href="about">READ MORE!</a></p>
+      </div><!--END class="about-cta"-->
+      <div class="general-item">
+      	<h2>Dealsletter</h2>
+         <span class="slider-ornament"></span>
+         <p>Receive Deals from US Flag and Banner</p>
+      </div><!--END class="general-item"-->
+   </div><!--END class="featured-items"-->
+   <br class="clear" /><!--restore document flow-->
+   <hr class="featured" />
+   <h2 class="featured">Decorative Feather Dancers</h2>
+   <div class="featured-product">
+   	<a href="shop/flags/feather-dancer/decorative"><img src="Assets/img/products/cta/full-ad-decorative.png" width="968" height="300" alt="Decorative Feather Flags"></a>
+   </div><!--END class="featured-product"-->
+   <hr />
+   <div class="featured-banners">
+   	<h2>Shop Banners By Industry</h2>
+   	<ul>
+      	<li><h3>Business</h3><img src="Assets/img/products/cta/business-banner-cta.jpg" width="167" height="50" alt="Business"></li>
+         <li><h3>Finance</h3><img src="Assets/img/products/cta/finance-banner-cta.jpg" width="167" height="50" alt="Finance"></li>
+         <li><h3>Real Estate</h3><img src="Assets/img/products/cta/real-estate-banner-cta.jpg" width="167" height="50" alt="Real Estate"></li>
+         <li><h3>Rental</h3><img src="Assets/img/products/cta/rental-banner-cta.jpg" width="167" height="50" alt="Rental"></li>
+         <li><h3>Sales</h3><img src="Assets/img/products/cta/sales-banner-cta.jpg" width="167" height="50" alt="Sales"></li>
+         <li><h3>Auto</h3><img src="Assets/img/products/cta/auto-banner-cta.jpg" width="167" height="50" alt="Auto"></li>
+      </ul>
+   </div>
+	<div class="deals-letter">
+   	<h2>Deals Letter</h2>
+      <hr />
+      <p>Sign up to receive deals from US Flag and Banner! Be the first to know when products go on sale.</p>
+   	<form name="catemaillistform10653" onsubmit="return checkWholeForm10653(this)" method="post" action="http://usflagandbanner.businesscatalyst.com/CampaignProcess.aspx?ListID=45295">
+      	<ul>
+         	<li class="full-name">
+            	<label for="CLFullName">Full Name</label>
+            	<input type="text" name="FullName" id="CLFullName" maxlength="255" />
+            </li>
+            <li class="email-address">
+            	<label for="CLEmailAddress">Email Address</label>
+            	<input type="text" name="EmailAddress" id="CLEmailAddress" maxlength="255" />
+            </li>
+            <li class="captcha">
+            	<label>Enter Word Verification in box below</label>
+            	{module_captchav2}
+            </li>
+            <li class="submit">
+            	<input type="submit" value="Subscribe" id="catlistbutton" />
+            </li>
+         </ul>
+         <script type="text/javascript" src="http://usflagandbanner.businesscatalyst.com/CatalystScripts/ValidationFunctions.js"></script><script type="text/javascript">
+         	//<![CDATA[
+            function checkWholeForm10653(theForm){
+            	var why = "";
+               if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value);
+               if (theForm.CaptchaV2) why += captchaIsInvalid(theForm, "Enter Word Verification in box below", "Please enter the correct Word Verification as seen in the image"); 
+               if (why != ""){alert(why);return false;}theForm.submit();return false;}
+           //]]>
+        </script>
+   	</form>
+      <br class="clear" /><!--restore document flow-->
+   </div><!--END class="deals-letter"-->
+   <br class="clear" /><!--restore document flow-->
+   <hr />
+   <h2 class="featured">Featured Catalogs</h2>
 	<div class="featured-catalogs">
-   	<h2>Featured Catalogs</h2>
+   	
 		{module_catalogue,203212,}
    	<hr />
    	{module_catalogue,204048,}
@@ -50,4 +121,5 @@
 </div><!--END id="home"-->
 <script>
 	$(".catalogs:odd .layout-one-half").removeClass("layout-one-half").addClass("layout-one-half-right");
+	$(".featured-banners ul li:even").css("margin-right", "60px");
 </script>
