@@ -4,38 +4,42 @@
    <script>
       $(window).load(function() {
         $('.flexslider').flexslider({
-          animation: "slide"
+          animation: "slide",
+			 smoothHeight: true,
+			 pauseOnAction: true,
+			 pauseOnHover: true
         });
       });
    </script>
 </head>
 <div class="flexslider">
    <ul class="slides">
-      <li id="feather-flag-slider"> 
-      	<div class="slide-img"><img src="Assets/img/products/feather_dancer.png" width="465" height="675" alt="The Feather Dancer" /></div> 
+   	<li id="us-flag-slide">
+         <div class="slide-content">
+            <h2>American Made</h2>
+            <p>Fly the best US Flags available and take pride in this great nation.</p>
+            <!--<a href="/shop/flags/US">SHOP</a>-->
+            <div class="slide-img"><img src="Assets/img/products/cta/cta-us-flag-slide.png" width="600" height="250" alt="US Flag"></div>
+         </div><!--END class="slide-content"-->
+         <br class="clear" /><!--restore document flow-->
+      </li><!--END id="us-flag"-->
+      <li id="feather-flag-slide"> 
+      	<div class="slide-img"><img src="Assets/img/products/cta/cta-feather-slider.png" width="440" height="700" alt="Feather Dancers"></div> 
          <div class="slide-content">
             <h2>Eye Catching</h2>
             <p>Captivate and invite new customers with the Feather Dancer.</p>
             <a href="/shop/flags/feather-dancer">SHOP</a>
          </div><!--END class="slide-content"-->
+         <br class="clear" /><!--restore document flow-->
       </li><!--END id="feather-flag"-->
-      <li id="banner-slider">
+      <li id="banner-slide">
          <div class="slide-content">
             <h2>High Quality Banners</h2>
-            <div class="slide-img"><img src="Assets/img/products/your_message.jpg" width="700"  alt="Your Message Goes Here Banner" id="banner" /></div>
+            <div class="slide-img"><img src="Assets/img/products/banners/lg/BBLN110_Balloon_Welcome_Open.jpg" width="860" height="260" alt="Banners"></div>
             <p>Get your message out with one of our high quality banners.</p>
             <a href="/shop/banners">SHOP</a>
          </div><!--END class="slide-content"-->
-      </li><!--END id="banner"-->
-      <li id="us-flag-slider">
-      	<div class="slide-img"><img src="Assets/img/products/us_flag.png" width="413" height="499" alt="US Flag" /></div> 
-         <div class="slide-content">
-            <h2>American Made</h2>
-            <p>Fly the best US Flags available and take pride in this great nation.</p>
-            <a href="/shop/flags/US">SHOP</a>
-         </div><!--END class="slide-content"-->
-         <br class="clear" /><!--restore document flow-->
-      </li><!--END id="us-flag"-->
+      </li><!--END id="banner"--> 
    </ul><!--END class="slides"-->
 </div><!--END class="flexslider"-->
 <br class="clear" /><!--restore document flow-->

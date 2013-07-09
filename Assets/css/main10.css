@@ -76,7 +76,7 @@ p { font-family: "Open Sans", Helvetica, Arial, Verdana; font-size: 13px; text-a
 /*  4.  Template Styles ---------------- */
 #page { background-color: #f8f8ff; border-left: 1px solid #c2c2c2; border-right: 1px solid #c2c2c2; margin: 0 auto; width: 968px; }
 #page-header { background-image: url(../img/dividers/double_blue_divider.png); background-repeat: no-repeat; background-position: 318px 14px; height: 135px; }
-#page-header .branding { float: left; margin-top: 44px; padding-left: 26px; width: 267px; }
+#page-header .branding { float: left; margin-top: 34px; padding-left: 22px; width: 267px; }
 #page-header nav { float: right; width: 654px; }
 #page-header ul, #page-header li { float: right; }
 .utility-nav { font-family: "Open Sans", Helvetica, Arial, Verdana; font-size: 15px; font-weight: 300; }
@@ -219,17 +219,42 @@ h2.search-header { color: #3487c3; padding: 30px 0 0 30px; }
 /*  8.  Alert Messages ----------------- */
 /*  9.  Tabbed Panels and Slider ------- */
 /*-- Slider --*/
-#feather-flag-slider { position: relative; }
+#feather-flag-slide {  }
+#feather-flag-slide .slide-img { float: left; margin-left: 30px; width: 440px; }
+#feather-flag-slide .slide-img img { margin-left: 30px; }
+#feather-flag-slide .slide-content { float: left; margin-left: 20px; margin-top: 250px; text-align: center; width: 440px; }
+#feather-flag-slide .slide-content h2 { font-size: 60px; font-weight: 200; }
+#feather-flag-slide .slide-content p { font-family: "Raleway", Helvetica, Arial, Verdana; font-size: 25px; font-weight: 200; margin: 10px 0 20px 0; text-align: center; }
+#feather-flag-slide .slide-content a { background-color: #3487c3; background-image: url(../img/backgrounds/patterns/2.png); -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; border: 2px solid #fff; -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.35); -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.35); box-shadow: 0px 3px 5px rgba(0,0,0,0.35); display: block; font-family: "Anton", Impact, Helvetica, Arial, Verdana; font-size: 22px; margin: 0 auto; line-height: 40px; height: 40px; text-align: center; width: 120px; }
+#feather-flag-slide .slide-content a:hover { background-color: #555; color: #fff; }
+
+#banner-slide { }
+#banner-slide .slide-content { margin: 0 0 60px 0; }
+#banner-slide .slide-img { margin: 30px auto; width: 860px; }
+#banner-slide .slide-content h2 { font-size: 60px; font-weight: 200; text-align: center; }
+#banner-slide .slide-content p { font-family: "Raleway", Helvetica, Arial, Verdana; line-height: 30px; font-size: 30px; font-weight: 200; margin: 10px auto 20px auto; text-align: center; width: 600px; }
+#banner-slide .slide-content a { background-color: #3487c3; background-image: url(../img/backgrounds/patterns/2.png); -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; border: 2px solid #fff; -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.35); -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.35); box-shadow: 0px 3px 5px rgba(0,0,0,0.35); display: block; font-family: "Anton", Impact, Helvetica, Arial, Verdana; font-size: 22px; margin: 0 auto; line-height: 40px; height: 40px; text-align: center; width: 120px; }
+#banner-slide .slide-content a:hover { background-color: #555; color: #fff; }
+
+#us-flag-slide {  }
+#us-flag-slide .slide-img { width: 600px; margin: 0 auto; }
+#us-flag-slide .slide-content { margin: 0 0 60px 0; }
+#us-flag-slide .slide-content h2 { font-size: 60px; font-weight: 200; width: 600px; margin: 0 0 0 60px; text-align: center; }
+#us-flag-slide .slide-content p { font-family: "Raleway", Helvetica, Arial, Verdana; font-size: 25px; font-weight: 200; margin: 10px 0 20px 160px; text-align: center; width: 400px; }
+#us-flag-slide .slide-content a { background-color: #3487c3; background-image: url(../img/backgrounds/patterns/2.png); -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; border: 2px solid #fff; -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.35); -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.35); box-shadow: 0px 3px 5px rgba(0,0,0,0.35); display: block; font-family: "Anton", Impact, Helvetica, Arial, Verdana; font-size: 22px; margin: 0 auto; line-height: 40px; height: 40px; text-align: center; width: 120px; }
+#us-flag-slide .slide-content a:hover { background-color: #555; color: #fff; }
+
+/*#feather-flag-slider { position: relative; }
 #feather-flag-slider .slide-img { margin-left: 75px; }
 #feather-flag-slider .slide-content { position: absolute; top: 230px; left: 500px; width: 400px; }
 #feather-flag-slider .slide-content h2 { margin: 5px 0; }
 #feather-flag-slider .slide-content p { margin: 10px 0 15px 0; text-align: left; }
 #banner-slider { }
-#banner-slider .slide-content { margin-top: 100px; }
-#banner-slider .slide-content h2 { margin: 20px auto; text-align: center; width: 700px; }
-#banner-slider .slide-img { margin: 30px auto; width: 700px }
-#banner-slider .slide-content p { margin: 20px auto; text-align: center; width: 400px; }
-#banner-slider .slide-content a { margin: 20px auto; }
+#banner-slider .slide-content { margin-top: 30px; }
+#banner-slider .slide-content h2 { margin: 20px auto; text-align: center; width: 800px; }
+#banner-slider .slide-img { margin: 30px auto; width: 860px; }
+#banner-slider .slide-content p { font-size: 40px; line-height: 40px; margin: 20px auto; text-align: center; width: 600px; }
+#banner-slider .slide-content a { margin: 40px auto; }
 #us-flag-slider { padding-top: 100px; }
 #us-flag-slider .slide-img { float: left; padding: 0 30px; width: 360px; }
 #us-flag-slider .slide-content { float: left; margin: 100px 0 0 0; padding: 0 30px; width: 488px; }
@@ -239,7 +264,7 @@ h2.search-header { color: #3487c3; padding: 30px 0 0 30px; }
 .flexslider h2 { font-size: 60px; font-weight: 200; }
 .flexslider p { font-family: "Raleway", Helvetica, Arial, Verdana; font-size: 25px; font-weight: 200; }
 .flexslider a { background-color: #3487c3; background-image: url(../img/backgrounds/patterns/2.png); -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; border: 2px solid #fff; -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.35); -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.35); box-shadow: 0px 3px 5px rgba(0,0,0,0.35); display: block; font-family: "Anton", Impact, Helvetica, Arial, Verdana; font-size: 22px; line-height: 40px; height: 40px; text-align: center; width: 120px; }
-.flexslider a:hover { background-color: #555; color: #fff; }
+.flexslider a:hover { background-color: #555; color: #fff; }*/
 /*Tabbd Panels*/
 /*See spry style sheet*/
 
