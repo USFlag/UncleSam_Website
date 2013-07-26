@@ -1,6 +1,5 @@
 <html>
 <head>
-   <title></title>
    <style type="text/css">
 body { margin: 18px; }
 body, table { font: 12px/18px "Lucida Grande", Arial, Verdana, sans-serif; }
@@ -13,83 +12,70 @@ li { list-style: none; text-align: center; }
 hr { -webkit-margin-before: 0; -webkit-margin-after: 0; margin-before: 0; margin-after: 0; border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
 </style>
 </head>
-
 <body>
 <div class="branding">
    <img src="http://usflagandbanner.com/Assets/img/branding/logo.png" alt="US Flag and Banner" width="225" style="margin: 15px 0 15px 0" />
    <hr />
-   <p>Thank you for your purchase! You can expect your order within 4 to 5 business days. Please remember...you will be notified</p>
+   <h2>{tag_recipientname},</h2>
+   <p>We’d like to inform you that we’ve successfully received payment for your order. We’ll be in touch again once your order has been dispatched. You will be notified when your order ships. If you should have any questions or concerns please feel free to call or email and we will gladly attend to your need. For your reference, please find the full details of your order below:</p>
+   <p>Thank you for your purchase! </p>
+</ul>
 </div>
-<p>Dear <b>{tag_recipientname}</b>,</p>
-<p>We’d like to inform you that we’ve successfully received payment for your order. We’ll be in touch again once your order has been dispatched. For your reference, please find the full details of your order below:</p>
-<table width="100%" class="invoice" cellspacing="0" cellpadding="6">
-   <tbody>
-      <tr>
-         <td><strong>Invoice Date</strong><br /> {tag_invoicedate}</td>
-         <td align="right"><strong>Invoice Number</strong><br /> {tag_invoicenumber}</td>
-      </tr>
-      <tr>
-         <td colspan="2">&nbsp;</td>
-      </tr>
-      <tr>
-         <td>{tag_recipientname}<br /> {tag_addressdefault}</td>
-      </tr>
-      <tr>
-         <td colspan="2">&nbsp;</td>
-      </tr>
-      <tr>
-         <td colspan="2"><table width="100%" class="border" cellspacing="0" cellpadding="6">
-               <tbody>
-                  <tr>
-                     <td style="width: 10%;"><span>Product Code</span></td>
-                     <td style="width: 20%;"><span>Product</span></td>
-                     <td style="width: 30%;"><span>Description</span></td>
-                     <td style="width: 10%;"><span>Unit Price</span></td>
-                     <td style="width: 10%;"><span>Tax</span></td>
-                     <td style="width: 10%;"><span>Quantity</span></td>
-                     <td style="width: 10%;"><span>Total</span></td>
-                  </tr>
-                  <tr class="text">
-                     <td style="width: 10%;">{tag_productcode}</td>
-                     <td style="width: 20%;">{tag_productname}</td>
-                     <td style="width: 30%;">{tag_productdescription}</td>
-                     <td style="width: 10%;">{tag_productextaxamount}</td>
-                     <td style="width: 10%;">{tag_producttaxamount}</td>
-                     <td style="width: 10%;">{tag_productquantity}</td>
-                     <td style="width: 10%;">{tag_producttotal}</td>
-                  </tr>
-               </tbody>
-            </table>
-            <table width="100%" class="textb" border="0" cellspacing="0" cellpadding="6">
-               <tbody>
-                  <tr>
-                     <td colspan="2"><br />
-                        <hr /></td>
-                  </tr>
-                  <tr>
-                     <td align="right" style="width: 90%;"><strong>Shipping Cost:</strong></td>
-                     <td class="text">{tag_shippingextaxamount}</td>
-                  </tr>
-                  <tr>
-                     <td align="right" style="width: 90%;"><strong>Shipping Tax:</strong></td>
-                     <td class="text">{tag_shippingtaxamount}</td>
-                  </tr>
-                  <tr>
-                     <td align="right" style="width: 90%;"><strong>Grand Total:</strong></td>
-                     <td>{tag_invoicetotal}</td>
-                  </tr>
-                  <tr>
-                     <td align="right" style="width: 90%;"><strong>Paid Already:</strong></td>
-                     <td>{tag_amountpaid}</td>
-                  </tr>
-                  <tr>
-                     <td align="right" style="width: 90%;"><strong>Outstanding:</strong></td>
-                     <td>{tag_amountoutstanding}</td>
-                  </tr>
-               </tbody>
-            </table></td>
-      </tr>
-   </tbody>
+<table class="invoice" width="100%" cellspacing="0" cellpadding="6">
+   <tr>
+      <td><strong>Invoice Date</strong><br /> {tag_invoicedate}</td>
+      <td align="right"><strong>Invoice Number</strong><br /> {tag_invoicenumber}</td>
+   </tr>
+   <tr>
+      <td><br /><strong>{tag_company}</strong><br /><br /><strong>Shipping:</strong><br />{tag_addressshipping}{tag_phonework}{tag_phonehome}<br /><br /><strong>Billing:</strong><br />{tag_addressbilling}<br /><br /><strong>Shipping Instructions:</strong><br />{tag_shippinginstructions}</td>
+   </tr>
+   <tr>
+      <td colspan="2">&nbsp;</td>
+   </tr>
+   <tr style="text-align:center;">
+      <td colspan="2"><table class="border" width="100%" cellspacing="0" cellpadding="6">
+            <tr>
+               <td width="10%"><span>Product Code</span></td>
+               <td width="60%"><span>Product</span></td>
+               <td width="10%"><span>Unit Price</span></td>
+               <td width="10%"><span>Quantity</span></td>
+               <td width="10%"><span>Total</span></td>
+            </tr>
+            <tr class="text">
+               <td width="10%">{tag_productcode}</td>
+               <td width="60%">{tag_productname}</td>
+               <td width="10%">{tag_productextaxamount}</td>
+               <td width="10%">{tag_productquantity}</td>
+               <td width="10%">{tag_producttotalextax}</td>
+            </tr>
+         </table>
+         <table width="100%" class="textb" border="0" cellspacing="0" cellpadding="6">
+            <tr>
+               <td colspan="2"><br />
+                  <hr /></td>
+            </tr>
+             <tr>
+               <td align="right" width="90%"><strong>Sub Total:</strong></td>
+               <td class="text">{tag_productsubtotal}</td>
+            </tr>
+            <tr>
+               <td align="right" width="90%"><strong>Shipping Cost:</strong></td>
+               <td class="text">{tag_shippingextaxamount}</td>
+            </tr>
+            <tr>
+               <td align="right" width="90%"><strong>Discount:</strong></td>
+               <td class="text">{tag_invoicediscountamount}</td>
+            </tr>
+            <tr>
+               <td align="right" width="90%"><strong>Tax:</strong></td>
+               <td class="text">{tag_invoicetotaltaxamount}</td>
+            </tr>
+            <tr>
+               <td align="right" width="90%"><strong>Total:</strong></td>
+               <td>{tag_invoicetotal}</td>
+            </tr>
+         </table></td>
+   </tr>
 </table>
 <hr />
 <br />
