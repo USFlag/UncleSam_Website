@@ -1,5 +1,5 @@
 <head>
-	<script src="Assets/lib/FlexSlider/jquery.flexslider-min.js" type="text/javascript"></script>
+   <script src="Assets/lib/FlexSlider/jquery.flexslider-min.js" type="text/javascript"></script>
    <link href="Assets/lib/FlexSlider/flexslider.css" type="text/css" rel="stylesheet" />
    <script>
       $(window).load(function() {
@@ -12,41 +12,86 @@
       });
    </script>
 </head>
+
 <div class="flexslider">
    <ul class="slides">
-   	<li id="us-flag-slide">
+      <li id="us-flag-slide">
          <div class="slide-content">
             <h2>American Made</h2>
-            <p>Fly the best US Flags available and take pride in this great nation.</p>
-            <!--<a href="/shop/flags/US">SHOP</a>-->
-            <div class="slide-img"><img src="Assets/img/products/cta/cta-us-flag-slide.png" width="600" height="250" alt="US Flag"></div>
-         </div><!--END class="slide-content"-->
-         <br class="clear" /><!--restore document flow-->
-      </li><!--END id="us-flag"-->
-      <li id="feather-flag-slide"> 
-      	<div class="slide-img"><img src="Assets/img/products/cta/cta-feather-slider.png" width="440" height="700" alt="Feather Dancers"></div> 
+            <p>Fly the best US Flags available and take pride in this great nation, <a href="/shop/flags/us/american-flag-standard-3-x-5">SHOP</a></p>
+            <div class="slide-img"><a href="/shop/flags/us/american-flag-standard-3-x-5"><img src="Assets/img/products/cta/cta-us-flag-slide.png" width="600" height="250" alt="US Flag"></a></div>
+         </div>
+         <!--END class="slide-content"--> 
+         <br class="clear" /><!--restore document flow--> 
+      </li>
+      <!--END id="us-flag"-->
+      <li id="feather-flag-slide">
+         <div class="slide-img"><img src="Assets/img/products/cta/cta-feather-slider.png" width="300" alt="Feather Dancers"></div>
          <div class="slide-content">
             <h2>Eye Catching</h2>
-            <p>Captivate and invite new customers with the Feather Dancer.</p>
-            <a href="/shop/flags/feather-dancer">SHOP</a>
-         </div><!--END class="slide-content"-->
-         <br class="clear" /><!--restore document flow-->
-      </li><!--END id="feather-flag"-->
+            <p>Captivate and invite new customers with the Feather Dancer, <a href="/shop/flags/feather-dancer">SHOP</a></p>
+         </div>
+         <!--END class="slide-content"--> 
+         <br class="clear" /><!--restore document flow--> 
+      </li>
+      <!--END id="feather-flag"-->
       <li id="banner-slide">
          <div class="slide-content">
-            <h2>High Quality Banners</h2>
-            <div class="slide-img"><img src="Assets/img/products/banners/lg/BBLN110_Balloon_Welcome_Open.jpg" width="860" height="260" alt="Banners"></div>
-            <p>Get your message out with one of our high quality banners.</p>
-            <a href="/shop/banners">SHOP</a>
-         </div><!--END class="slide-content"-->
-      </li><!--END id="banner"--> 
-   </ul><!--END class="slides"-->
-</div><!--END class="flexslider"-->
+            <h2>Beautiful Stock Banners, <a href="/shop/banners">SHOP</a></h2>
+            <div class="slide-img"><img src="Assets/img/products/banners/lg/B116_We_Finance.jpg" width="860" height="260" alt="We Finance"></div>
+         </div>
+         <!--END class="slide-content"--> 
+      </li>
+      <!--END id="banner"-->
+   </ul>
+   <!--END class="slides"--> 
+</div>
+<!--END class="flexslider"--> 
 <br class="clear" /><!--restore document flow-->
 <div id="home">
-	{module_catalogue,203212,}
-   {module_catalogue,204048,}
-</div><!--END id="home"-->
+	<br />
+	<hr />
+   <div class="free-shipping">
+   	<h2>FREE SHIPPING</h2>
+      <p>On Orders Over $99</p>
+   </div><!--END class="free-shipping"-->
+   <div class="deals-letter">
+      <h2>Deals Letter</h2>
+      <hr />
+      <p>Sign up to receive deals from US Flag and Banner! Be the first to know when products go on sale.</p>
+      <form name="catemaillistform10653" onsubmit="return checkWholeForm10653(this)" method="post" action="http://usflagandbanner.com/CampaignProcess.aspx?ListID=45295">
+         <ul>
+            <li class="full-name">
+               <label for="CLFullName">Full Name</label>
+               <input type="text" name="FullName" id="CLFullName" maxlength="255" />
+            </li>
+            <li class="email-address">
+               <label for="CLEmailAddress">Email Address</label>
+               <input type="text" name="EmailAddress" id="CLEmailAddress" maxlength="255" />
+            </li>
+            <li class="captcha">
+               <label>Enter Word Verification in box below</label>
+               {module_captchav2} </li>
+            <li class="submit">
+               <input type="submit" value="Subscribe" id="catlistbutton" />
+            </li>
+         </ul>
+         <script type="text/javascript" src="http://usflagandbanner.com/CatalystScripts/ValidationFunctions.js"></script><script type="text/javascript">
+         	//<![CDATA[
+            function checkWholeForm10653(theForm){
+            	var why = "";
+               if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value);
+               if (theForm.CaptchaV2) why += captchaIsInvalid(theForm, "Enter Word Verification in box below", "Please enter the correct Word Verification as seen in the image"); 
+               if (why != ""){alert(why);return false;}theForm.submit();return false;}
+           //]]>
+        </script>
+      </form>
+      <br class="clear" /><!--restore document flow--> 
+   </div>
+   <!--END class="deals-letter"--> 
+   <br class="clear" /><!--restore document flow--> 
+   {module_catalogue,203212,} {module_catalogue,204048,} </div>
+<!--END id="home"--> 
 <script>
 	$(".catalogs:odd .layout-one-half").removeClass("layout-one-half").addClass("layout-one-half-right");
 </script>

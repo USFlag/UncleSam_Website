@@ -2,25 +2,24 @@
 	<link href="/Assets/lib/SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css">
    <script src="/Assets/lib/SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
 </head>
-<hr />
 <div class="large-product">
    <div class="{tag_tags}">
       
-      <div class="img">{tag_largeimage}</div>
+      <div class="img">{tag_largeimage}<div class="product-poplets"><h3>Related Images</h3>{tag_poplets}</div></div>
       
       <div class="content">
          <ul>
          	<li class="name-description-code-cart">
             	<h2 class="product-name">{tag_name}<strong>&nbsp;&#8212;&nbsp;{tag_saleprice}</strong></h2>
             	<p class="product-description">{tag_description}</p>
-               <div class="product-grouping">Options: <br /><br /> {tag_grouping}</div>
+               <div class="product-grouping"><span class="options"></span> <br /><br /> {tag_grouping}</div>
                <b class="product-code">Product Code: {tag_productcode}</b>
                <p class="add-to-cart">{tag_addtocartinputfield} {tag_addtocart}</p>
                <!--<div class="product-poplets-flag"><h3>Related Images</h3>{tag_poplets}</div>-->
             </li>
          	<li class="panels-poplets">
             	<div class="product-panels">{tag_custom1}</div>
-               <div class="product-poplets-banners"><h3>Related Images</h3>{tag_poplets}</div>
+               
             </li>
             <li class="clear"></li>
          </ul>
@@ -31,5 +30,9 @@
 <hr />
 <script>
 	
+	if ($(".productSelectInput").length > 0) { 
+   	 $(".options").text("Options:");
+		 
+	} else { $(".product-grouping").css("display", "none"); }
 	
 </script>

@@ -24,6 +24,7 @@
          <div class="tax">{tag_producttaxrate}</div>
          <div class="total">{tag_producttotal}</div>
          <div class="remove">{tag_productremovelink}</div>
+         <div class="hide">{tag_productdescription}</div>
          <br class="clear" /><!--restore document flow-->
       </div><!--END id="product-summary"-->
       <div id="sub-total">
@@ -40,9 +41,9 @@
             <br class="clear" /><!--restore document flow-->
          </div><!--END class="shipping"-->
          <div class="discounts">
-         	<h2>Did you know about US Flag and Banner price breaks? <a href="#">Find out more!</a></h2>
+         	<h2>Don't forget that on orders over $99 you get free shipping!</a></h2>
             <hr />
-            <h3>Already have a discount code? You can use it here...{tag_discountcode}<a href="#" onclick="return false;">Update</a>&nbsp;&nbsp;(-{tag_invoicediscountamount})</h3>
+            <h3>Have a discount code? You can use it here...{tag_discountcode}<a href="#" onclick="return false;">Update</a>&nbsp;&nbsp;(-{tag_invoicediscountamount})</h3>
          </div><!--END class="discounts"-->
          <br class="clear" /><!--restore document flow-->
       </div><!--END id="discounts-and-shipping"-->
@@ -77,6 +78,17 @@ var sel = document.getElementById('ShippingOptions')
 </script>
 <script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script><script type="text/javascript">
 	//<![CDATA[
-	function checkWholeForm59527(theForm){var why = "";if (theForm.Username) why += isEmpty(theForm.Username.value, "Username");if (theForm.Password) why += isEmpty(theForm.Password.value, "Password");if (why != ""){alert(why);return false;}theForm.submit();return false;}
+	function checkWholeForm59527(theForm){var why = "";
+	if (theForm.Username) why += isEmpty(theForm.Username.value, "Username");
+	if (theForm.Password) why += isEmpty(theForm.Password.value, "Password");
+	if (why != ""){alert(why);return false;}theForm.submit();return false;}
 	//]]>
+	
+	// select shipping option automatically
+	/*var shippingOptions = document.getElementById('ShippingOptions');
+	if (shippingOptions) {
+  		shippingOptions.selectedIndex = 1;
+   	shippingOptions.onchange();
+	}*/
+
 </script>

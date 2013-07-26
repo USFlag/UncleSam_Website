@@ -110,13 +110,15 @@ table.webform td {
 
 .system-message, .system-error-message {
 	background-color: #f9f9f9;
-	border: 1px solid #eee;
+	border-top: 1px solid #cb2129;
+	border-bottom: 1px solid #cb2129;
 	color: #666;
-	margin: 18px;
+	/*margin: 18px;*/
+	margin-top: 50px;
 	min-height: 110px;
 	height: auto !important;
 	height: 110px;
-	padding: 36px 36px 36px 180px;
+	padding: 36px 36px 36px 120px;
 }
 
 /*.system-message {
@@ -128,13 +130,17 @@ table.webform td {
 }*/
 
 .system-message h1, .system-error-message h1 {
-	color: #000;
+	color: #cb2129;
 	margin: 0 0 18px 0;
 }
 
-.system-message a:link, .system-error-message a:link {
-	color: #1969bc;
+.system-message a, .system-error-message a {
+	color: #5082c6;
 }
+
+.system-message p, .system-error-message p { font-size: 14px; margin: 5px 15px; }
+.system-message ul, .system-error-message ul { margin-left: 15px; }
+.system-message li, .system-error-message li { font-size: 12px; margin-left: 15px; list-style: circle; }
 
 .ok {
 	background: #E9FBE3;
@@ -860,8 +866,8 @@ input.PaymentMethodType {
 }
 
 .shop-receipt, .shop-quote-receipt {
-	background: #f9f9f9;
-	border: 1px solid #eee;
+	/*background: #f9f9f9;
+	border: 1px solid #eee;*/
 	margin: 18px;
 	padding: 18px;
 }

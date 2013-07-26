@@ -1,11 +1,12 @@
 <div id="account-page">
 	<div class="layout-full">
-   	<!--<div>
-      	<h2>Hello! {module_firstname}, {module_logout}</h2>
+   	<div>
+      	<h2>Hello! {module_firstname}, <span class="logout">{module_logout}</span></h2>
       </div>
-   	<div id="account-purchase-history">
-      	{module_order,a,,Default}{module_case,a,,Default}
-      </div>--><!--END id="account-purchase-history"-->
+      <br class="clear" /><!--restore document flow-->
+   	<!--<div id="account-purchase-history">-->
+      	{module_order,a,,Default}<!--{module_case,a,,Default}-->
+      <!--</div>--><!--END id="account-purchase-history"-->
       <form class="form" name="catupdatedetailsformform53938" method="post" enctype="multipart/form-data" onsubmit="return checkWholeForm53938(this)" action="/MemberProcess.aspx">
       <!--<b class="required">(Required Information)</b>--><!--END class="required"-->
       <div id="account-personal-info">

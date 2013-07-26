@@ -86,7 +86,7 @@
 	line-height: 35px;
 	text-align: center;
 }
-
+.product-panels h3 { font-size: 16px!important; }
 /* This selector is an example of how to change the appearnce of a tab button
  * container as the mouse enters it. The class "TabbedPanelsTabHover" is
  * programatically added and removed from the tab element as the mouse enters

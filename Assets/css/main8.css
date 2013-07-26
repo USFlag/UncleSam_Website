@@ -1,0 +1,221 @@
+
+/* US Flag and Banner Master Style Sheet */
+
+/* Table of Contents ------------------- */
+
+/*  1.  Element Styles */
+/*  2.  Class Styles (General) */
+/*  3.  Template Styles */
+/*  4.  Page Styles */
+/*  5.  Layout Styles */
+/*  6.  Type Styles */
+/*  7.  Promo Box */
+/*  8.  Alert Messages */
+/*  9.  Tabbed Panels and Slider */
+/*  10. Form Styles */
+
+/* Other ------------------------------- */
+ 
+/*	Color:
+	Red:  #d8182c;
+	Blue: #3487c3;
+	Dark Grey: #555;
+	Light Grey: #c2c2c2; (Page Border)
+	Off White: #f8f8ff; (Page Background Color)
+	Plum: #91298c; (Promo Call Out Text)
+	Light Grey: #ebebeb; (Promo Background Color)
+	Baige: #fffaf1; (Alert Messages - General Message Background Color)
+	Light Pink: #f4d8df; (Alert Messages - Error Message Background Color)
+	Light Green: #e8f1e3; (Alert Messages - Success Message Background Color)
+	Dark Green: #52861f; (Alert Messages - Success Message Icon Color)
+	Bannana: #f9f7db; (Alert Messages - Notice Message Background Color)
+	Mustard: #81791b; (Alert Messages - Notice Message Icon Color)
+*/
+
+/*	Fonts:
+	font-family: 'Lato', sans-serif;
+	font-family: 'Arimo', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+*/
+
+/*  1.  Element Styles ----------------- */
+body {
+	background-color: #e1e1e1;
+	font-size: 16px;
+	font-family: "Open Sans", Helvetica, Arial, Verdana;
+	margin: 25px 0;
+}
+
+a { color: #fff; text-decoration:none; }
+a:hover { color: #d8182c; text-decoration:none; }
+
+/*  2.  Class Styles (General) --------- */
+.clear {
+	clear: both;
+	visibility: hidden;
+}
+
+.hide { 
+	position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important; 
+}
+
+.red-border {
+	background-color: #d8182c;
+	height: 2px;
+	margin: 0 auto;
+	width: 970px;
+}
+
+/*  3.  Template Styles ---------------- */
+#page {
+	background-color: #f8f8ff;
+	border-left: 1px solid #c2c2c2;
+	border-right: 1px solid #c2c2c2;
+	margin: 0 auto;
+	width: 968px;
+}
+#page-header {
+	background-image: url(../img/dividers/double_blue_divider.png);
+	background-repeat: no-repeat;
+	background-position: 316px 16px;
+	height: 135px;
+}
+#page-header .branding {
+	float: left;
+	margin-top: 46px;
+	padding-left: 25px;
+	width: 267px;
+}
+#page-header nav {
+	float: right;
+	width: 654px;
+}
+#page-header ul, #page-header li{
+	float: right;
+}
+.utility-nav { 
+	font-family: "Open Sans", Helvetica, Arial, Verdana;
+	font-size: 15px;
+	font-weight: 300;
+}
+.utility-nav li {
+	height: 45px;
+	line-height: 45px;
+	padding: 0 12px;
+	text-align: center;
+}
+.utility-nav li:last-child { font-size: 23px; }
+.utility-nav a { color: #555; }
+.utility-nav a:hover { color: #3487c3; }
+.utility-nav .search {
+	background-image:url(../img/icons/mag-icon.png);
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	border: 1px solid #c2c2c2;
+	border-radius: 30px;
+	color: #555;
+	font-family: "Open Sans", Helvetica, Arial, Verdana;
+	font-size: 15px;
+	font-weight: 300;
+	height: 30px;
+	outline: none;
+	padding: 0 40px;
+	width: 170px;
+	webkit-appearance: none;
+}
+.main-nav {
+	border-bottom: 1px solid #3487c3;
+	border-top: 1px solid #3487c3;
+	padding: 1px 0;
+	-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+	-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+	text-shadow: rgba(0,0,0,.5) 1px 1px 5px;
+}
+
+.main-nav li {
+	background-color: #3487c3;
+	background-image: url(../img/backgrounds/patterns/2.png);/*change later...wrong direction*/
+	line-height: 56px;
+	height: 56px;
+	text-align: center;
+	width: 216px;
+}
+.main-nav a {
+	display: block;
+	height: 56px;
+	width: 216px;
+}
+.main-nav a:hover {
+	background-color: rgb(0, 0, 0); /* Fall-back for browsers that don't support rgba */
+   background-color: rgba(0, 0, 0, .25);
+	color: #fff;
+	display: block;
+	height: 56px;
+	width: 216px;
+}
+.main-nav .feather-flags {
+	border-right: 1px solid #f8f8ff;
+	border-left: 1px solid #f8f8ff;
+}
+#page-content {
+	min-height: 500px;
+}
+#page-footer {
+	background-image:url(../img/dividers/page-shadow-divider.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	color: #555;
+	padding: 10px 30px;
+}
+#page-footer h2 {
+	font-size: 25px;
+	height: 45px;
+	line-height: 45px;
+}
+#page-footer nav {
+	float: left;
+	height: 45px;
+	width: 625px;
+}
+#page-footer ul, #page-footer li { float: left; }
+#page-footer li {
+	font-family: "Open Sans", Helvetica, Arial, Verdana;
+	font-weight: 300; 
+	height: 45px;
+	line-height: 45px;
+}
+#page-footer span {
+	margin: 0 15px;
+	font-family: "Raleway", Helvetica, Arial, Verdana
+}
+#page-footer .branding {
+	float: right;
+	width: 195px;
+}
+#page-footer a { color: #555; }
+#page-footer a:hover { color: #3487c3; }
+#page-footer small {
+	font-size: 12px;
+	height: 35px;
+	line-height: 35px;
+}
+
+/*  4.  Page Styles -------------------- */
+/*  5.  Layout Styles ------------------ */
+/*  6.  Type Styles -------------------- */
+/*  7.  Promo Box ---------------------- */
+/*  8.  Alert Messages ----------------- */
+/*  9.  Tabbed Panels and Slider ------- */
+#banner {
+	margin: 0 auto;
+	width: 700px;
+}
+/*  10. Form Styles -------------------- */
+::-webkit-input-placeholder { color: #555; }
+::-moz-placeholder { color: #555; } /* firefox 19+ */
+:-ms-input-placeholder { color: #555; } /* ie */
+input:-moz-placeholder { color: #3487c3; }π

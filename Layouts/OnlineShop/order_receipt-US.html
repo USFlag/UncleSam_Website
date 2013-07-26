@@ -1,2 +1,28 @@
 
-  <div class="shop-receipt">   <h1>Receipt</h1>   <p class="error">{module_error}</p>   <p>Thank you for your purchase. Please find confirmation of your order and payment below. You will also receive an email confirmation of your order.</p>   <hr />   <h2>Invoice/Reference Number</h2>   <p>{tag_invoicenumber}</p>   <h2>Authorization Code</h2>   <p>{tag_authorizationcode}</p>  </div>  
+<div class="shop-receipt">
+   <h1 style="font-size: 45px;">Receipt</h1>
+   <p class="error">{module_error}</p>
+   <br />
+   <p style="font-size: 20px;">Thank you for your purchase! Please find confirmation of your order and payment below. You will also receive an email confirmation of your order.</p>
+   <br /><br />
+   <hr /><br />
+   <h2>Invoice/Reference Number</h2>
+   <p>{tag_invoicenumber}</p>
+   
+</div>
+<script type"text/javascript">
+var siteUrl = 'http://www.usflagandbanner.com';
+var links = document.getElementsByTagName('A');
+
+	for (i = 0; i < links.length; i++){
+		if (links[i].getAttribute('href')) {
+      	var href = links[i].getAttribute('href');
+         if (href.substring(0,4) != 'http' && href.substring(0,1) == '/'){
+         	//this example requires your links to have absolute paths.
+         	//document-relative paths and absolute URLs are not supported.
+         	links[i].setAttribute('href', siteUrl + href);
+         } 
+      }
+	}
+
+</script>
