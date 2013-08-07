@@ -9,13 +9,32 @@
    <link href="../Assets/lib/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet" />
    <script src="../Assets/lib/jQuery/jquery-1.9.1.min.js" type="text/javascript"></script>
    <script src="../Assets/lib/modernizr/modernizr.custom.45783.js" type="text/javascript"></script>
+   <script src="Assets/lib/SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+   <link href="Assets/lib/SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
    <script src="../Assets/js/main.js" type="text/javascript"></script>
    <link href="../Assets/css/main10.css" type="text/css" rel="stylesheet" />
    <link rel="icon" href="../Assets/img/branding/favicon.ico" />
+   <meta name="google-site-verification" content="FeENGahyzZNnEeS4DpYbBP2HxbAIvTtEApj8CJMVq58" />
+   <meta name="msvalidate.01" content="147EFC45073EEBB53215E7E0ED20293D" />
    <!--[if lt IE 9]>
 	<link rel="stylesheet" href="../Assets/lib/font-awesome/css/font-awesome-ie7.min.css">
    <link href="/Assets/css/ie.css" type="text/css" rel="stylesheet" />
 	<![endif]-->
+   <script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-4153566-1']);
+	  _gaq.push(['_setDomainName', 'none']);
+    _gaq.push(['_setAllowLinker', true]);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+		 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
 </head>
 
 <body>
@@ -42,12 +61,63 @@
                <li><a href="../home.html" class="icon-home"><span class="hide">Home</span></a></li>
             </ul>
             <br class="clear" /><!--restore document flow-->
-            <ul class="main-nav">
+            <!--<ul class="main-nav">
             	<li><a href="/shop">SHOP All</a></li>
             	<li><a href="../banners.html">BANNERS</a></li>
-               <li class="feather-flags"><a href="../featherflags.html">FEATHER FLAGS</a></li><!--END class="feather-flags"-->
+               <li class="feather-flags"><a href="../featherflags.html">FEATHER FLAGS</a></li>
                <li><a href="../usflags.html">US FLAGS</a></li>
+            </ul>-->
+            
+            <ul id="MenuBar1" class="MenuBarHorizontal main-nav">
+         <li><a class="MenuBarItemSubmenu" href="/usflags.html">US FLAGS</a>
+            <ul>
+               <li><a href="/shop/flags/us/american-flag-economy-3-x-5">Economy US Flags</a></li>
+               <li><a href="/shop/flags/us/american-flag-standard-3-x-5">Standard US Flags</a></li>
             </ul>
+         </li>
+         <li><a class="MenuBarItemSubmenu" href="/featherflags.html">FEATHER FLAGS</a>
+            <ul>
+               <li><a class="MenuBarItemSubmenu" href="/shop/flags/feather-dancer">FEATHER DANCER</a>
+                  <ul>
+                     <li><a href="/shop/flags/feather-dancer/auto">Auto</a></li>
+                     <li><a href="/shop/flags/feather-dancer/business">Business</a></li>
+                     <li><a href="/shop/flags/feather-dancer/decorative">Decorative</a></li>
+                     <li><a href="/shop/flags/feather-dancer/fireworks">Fireworks</a></li>
+                     <li><a href="/shop/flags/feather-dancer/property-management-1">Property Management</a></li>
+                  </ul>
+               </li>
+               <li><a class="MenuBarItemSubmenu" href="/shop/flags/sidewalk-solution">SIDEWALK SOLUTION</a>
+                  <ul>
+                     <li><a href="/shop/flags/sidewalk-solution/auto">Auto</a></li>
+                     <li><a href="/shop/flags/sidewalk-solution/business">Business</a></li>
+                     <li><a href="/shop/flags/sidewalk-solution/decorative">Decorative</a></li>
+                     <li><a href="/shop/flags/sidewalk-solution/fireworks">Fireworks</a></li>
+                     <li><a href="/shop/flags/sidewalk-solution/property-management-1">Property Management</a></li>
+                  </ul>
+               </li>
+               <li><a href="/shop/flags/tail-feather">TAIL FEATHER</a></li>
+            </ul>
+         </li>
+         <li><a class="MenuBarItemSubmenu" href="/shop/banners">BANNERS</a>
+            <ul>
+               <li><a href="/shop/banners/auto">Auto</a></li>
+               <li><a href="/shop/banners/business">Business</a></li>
+               <li><a href="/shop/banners/finance">Finance</a></li>
+               <li><a href="/shop/banners/property-management">Property Management</a></li>
+               <li><a href="/shop/banners/sales">Sales</a></li>
+            </ul>
+         </li>
+         <li class="shop-all"><a class="MenuBarItemSubmenu" href="#">MORE</a>
+            <ul>
+               <li><a href="/shop">SHOP ALL</a></li>
+               <li><a href="#">Pennants - soon!</a></li>
+               <li><a href="#">Patriotic Decor - soon!</a></li>
+               <li><a href="#">Message Flags - soon!</a></li>
+               <li><a href="#">Decorative Flags - soon!</a></li>
+            </ul>
+         </li>
+      </ul>
+            
          </nav>
          <br class="clear" /><!--restore document flow-->
          
@@ -57,8 +127,8 @@
          {tag_pagecontent}
       </section><!--END id="page-content"-->
       <footer id="page-footer">
-      	<h2>More</h2>
          <nav>
+         	<h2>More</h2>
          	<ul>
             	<li><a href="../about.html">ABOUT</a><span>|</span></li>
                <li><a href="../faq.html">FAQs</a><span></span></li>
@@ -67,11 +137,15 @@
                <li><a href="#">GOOGLE +</a></li>-->
             </ul>
          </nav>
+         <br class="clear" /><!--restore document flow-->
          <div class="branding"><a href="../home.html"><img src="../Assets/img/branding/logo.png" width="195" alt="US Flag and Banner Logo"></a></div><!--END class="branding"-->
          <br class="clear" /><!--restore document flow-->
          <small>Copyright &copy; <span>-</span> 2013 US Flag and Banner <span>-</span><a href="../terms.html">Terms of Use</a> <span>-</span><a href="../privacy.html">Privacy Policy</a></small>
       </footer><!--END id="page-footer"-->
    </div><!--END id="page"-->
    <div class="red-border"></div><!--purely aesthetic...bad practice...temporary until find better solution-->
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script> 
 </body>
 </html>

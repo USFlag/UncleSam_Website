@@ -14,18 +14,56 @@
 	<link rel="stylesheet" href="../Assets/lib/font-awesome/css/font-awesome-ie7.min.css">
    <link href="/Assets/css/ie.css" type="text/css" rel="stylesheet" />
 	<![endif]-->
+   
+   <!--Google Analytics-->
+   <script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-4153566-1']);
+	  _gaq.push(['_setDomainName', 'none']);
+    _gaq.push(['_setAllowLinker', true]);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+		 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
+   
+   <!--Google Analytics For Cart-->
+   <script type="text/javascript">
+	
+		var checkoutTracking = function(){
+		if (typeof ValidateCart !== 'function') { return; }
+
+		var _validateCart = ValidateCart;
+
+		ValidateCart = function(){
+			var 
+				link = document.getElementById('catshopbuy'),
+				res = _validateCart.apply(this, arguments);		
+
+			if (res === true) {
+				_gaq.push(['_link', link.href]);    
+			}        
+			return false;
+		};
+	};
+
+	checkoutTracking();  			
+
+	</script>
 </head>
 <body>
 <h1 class="hide">US Flag and Banner</h1> 
 <!-- accessibility and HTML5 outline -->
-<div class="red-border">
-</div>
+<div class="red-border"> </div>
 <!--purely aesthetic...bad practice...temporary until find better solution-->
 <div id="page">
    <header id="page-header">
-      <div class="branding">
-         <a href="/home.html"><img src="/Assets/img/branding/logo.png" alt="US Flag and Banner Logo" /></a>
-      </div>
+      <div class="branding"> <a href="/home.html"><img src="/Assets/img/branding/logo.png" alt="US Flag and Banner Logo" /></a> </div>
       <!--END class="branding"-->
       <nav>
          <h2 class="hide">Navigation</h2>
@@ -66,29 +104,27 @@
    </section>
    <!--END id="page-content"-->
    <footer id="page-footer">
-      <h2>More</h2>
       <nav>
-         <ul>
-            <li><a href="/about.html">ABOUT</a><span>|</span></li>
-            <li><a href="/faq.html">FAQs</a><span></span></li>
-            <!--<li><a href="#">FACEBOOK</a><span>|</span></li>
-            <li><a href="#">TWITTER</a><span>|</span></li>
-            <li><a href="#">GOOGLE +</a></li>-->
-         </ul>
-      </nav>
-      <div class="branding">
-         <a href="/home.html"><img src="/Assets/img/branding/logo.png" width="195" alt="US Flag and Banner Logo" /></a>
-      </div>
+         	<h2>More</h2>
+         	<ul>
+            	<li><a href="../about.html">ABOUT</a><span>|</span></li>
+               <li><a href="../faq.html">FAQs</a><span></span></li>
+               <!--<li><a href="#">FACEBOOK</a><span>|</span></li>
+               <li><a href="#">TWITTER</a><span>|</span></li>
+               <li><a href="#">GOOGLE +</a></li>-->
+            </ul>
+         </nav>
+         <br class="clear" /><!--restore document flow-->
+      <div class="branding"> <a href="/home.html"><img src="/Assets/img/branding/logo.png" width="195" alt="US Flag and Banner Logo" /></a> </div>
       <!--END class="branding"--> 
       <br class="clear" /> 
       <!--restore document flow--> 
       <small>Copyright &copy; <span>-</span> 2013 US Flag and Banner <span>-</span><a href="/terms.html">Terms of Use</a> <span>-</span><a href="/privacy.html">Privacy Policy</a></small>
    </footer>
-   <!--END id="page-footer"-->
+   <!--END id="page-footer"--> 
 </div>
 <!--END id="page"-->
-<div class="red-border">
-</div>
+<div class="red-border"> </div>
 <!--purely aesthetic...bad practice...temporary until find better solution-->
 </body>
 </html>

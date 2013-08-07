@@ -87,11 +87,16 @@ p { font-family: "Open Sans", Helvetica, Arial, Verdana; font-size: 13px; text-a
 .icon-home { font-size: 22px!important; }
 .utility-nav a:hover { color: #3487c3; }
 .utility-nav .search { background-image: url(../img/icons/mag-icon.png); background-repeat: no-repeat; background-position: 10px 10px; border: 1px solid #c2c2c2; border-radius: 30px; color: #555; font-family: "Open Sans", Helvetica, Arial, Verdana; font-size: 15px; font-weight: 300; height: 30px; outline: none; padding: 0 40px; width: 170px; webkit-appearance: none; }
-.main-nav { border-bottom: 1px solid #3487c3; border-top: 1px solid #3487c3; padding: 1px 0; -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.25); -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.25); box-shadow: 0px 1px 2px rgba(0,0,0,0.25);/*text-shadow: rgba(0,0,0,.5) 1px 1px 5px;*/ }
-.main-nav li { background-color: #3487c3; background-image: url(../img/backgrounds/patterns/2.png);/*change later...wrong direction*/ line-height: 50px; height: 50px; text-align: center; width: 161px; border-right: 1px solid #f8f8ff; }
-.main-nav li:first-child { border-right: none; } 
+.main-nav { border-bottom: 1px solid #3487c3; border-top: 1px solid #3487c3; padding: 1px 0!important; -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.25); -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.25); box-shadow: 0px 1px 2px rgba(0,0,0,0.25);/*text-shadow: rgba(0,0,0,.5) 1px 1px 5px;*/ }
+.main-nav li { background-color: #3487c3; /*background-image: url(../img/backgrounds/patterns/2.png);*//*change later...wrong direction*/ line-height: 50px; height: 50px; text-align: center; width: 161px; border-right: 1px solid #f8f8ff; }
+.main-nav li:last-child { border-right: none; } 
 .main-nav a { color: #fff!important; display: block; height: 50px; width: 161px; }
 .main-nav a:hover { color: #fff; background-color: rgb(0, 0, 0); /* Fall-back for browsers that don't support rgba */ background-color: rgba(0, 0, 0, .25); color: #fff; display: block; height: 50px; width: 161px; }
+
+/*DROP DOWN NAVIGATION*/
+
+
+
 /*.main-nav .feather-flags { border-right: 1px solid #f8f8ff; border-left: 1px solid #f8f8ff; }*/
 #page-content { min-height: 450px; }
 #page-footer { background-image: url(../img/dividers/page-shadow-divider.png); background-repeat: no-repeat; background-position: top center; color: #555; padding: 10px 30px; }
