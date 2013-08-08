@@ -8,6 +8,8 @@
    <link href="/Assets/lib/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet" />
    <script src="/Assets/lib/jQuery/jquery-1.9.1.min.js" type="text/javascript"></script>
    <script src="/Assets/lib/modernizr/modernizr.custom.45783.js" type="text/javascript"></script>
+   <script src="Assets/lib/SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+   <link href="Assets/lib/SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
    <script src="/Assets/js/main.js" type="text/javascript"></script>
    <link href="/Assets/css/main10.css" type="text/css" rel="stylesheet" />
    <!--[if lt IE 9]>
@@ -66,33 +68,82 @@
       <div class="branding"> <a href="/home.html"><img src="/Assets/img/branding/logo.png" alt="US Flag and Banner Logo" /></a> </div>
       <!--END class="branding"-->
       <nav>
-         <h2 class="hide">Navigation</h2>
-         <!-- accessibility and HTML5 outline -->
-         <ul class="utility-nav">
-            <li>
-               <form name="catsearchform90064" method="post" action="/Default.aspx?SiteSearchID=2846&amp;ID=/search-results.html">
-                  <div class="search-box">
-                     <input class="search" type="text" name="CAT_Search" id="CAT_Search" placeholder="Search..." />
-                     <input class="cat_button hide" type="submit" value="Search" />
-                  </div>
-               </form>
-            </li>
-            <li><a href="/Account/account.html">My Account</a></li>
-            <li><a href="/faq.html">Help</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/home.html" class="icon-home"><span class="hide">Home</span></a></li>
-         </ul>
-         <br class="clear" /> 
-         <!--restore document flow-->
-         <ul class="main-nav">
-            <li><a href="/shop">SHOP All</a></li>
-            <li><a href="/banners.html">BANNERS</a></li>
-            <li class="feather-flags"><a href="/featherflags.html">FEATHER FLAGS</a></li>
-            <!--END class="feather-flags"-->
-            <li><a href="/usflags.html">US FLAGS</a></li>
-         </ul>
-      </nav>
+            <h2 class="hide">Navigation</h2><!-- accessibility and HTML5 outline -->
+            <ul class="utility-nav">
+            	<li>
+               	<form name="catsearchform90064" method="post" action="/Default.aspx?SiteSearchID=2846&ID=/search-results.html">
+                     <div class="search-box-cart">
+                        <input class="search" type="text" name="CAT_Search" id="CAT_Search" placeholder="Search..." />
+                        <input class="cat_button hide" type="submit" value="Search" />
+                     </div>
+                  </form>
+               </li>
+               <li><a href="../Account/account.html">My Account</a></li>
+               <li><a href="../faq.html">Help</a></li>
+               <li><a href="../contact.html">Contact</a></li>
+               <li><a href="../about.html">About</a></li>
+               <li><a href="../home.html" class="icon-home"><span class="hide">Home</span></a></li>
+            </ul>
+            <br class="clear" /><!--restore document flow-->
+            <!--<ul class="main-nav">
+            	<li><a href="/shop">SHOP All</a></li>
+            	<li><a href="../banners.html">BANNERS</a></li>
+               <li class="feather-flags"><a href="../featherflags.html">FEATHER FLAGS</a></li>
+               <li><a href="../usflags.html">US FLAGS</a></li>
+            </ul>-->
+            
+            <ul id="MenuBar1" class="MenuBarHorizontal main-nav">
+         <li><a class="MenuBarItemSubmenu" href="/usflags.html">US FLAGS</a>
+            <ul>
+               <li><a href="/shop/flags/us/american-flag-economy-3-x-5">Economy US Flags</a></li>
+               <li><a href="/shop/flags/us/american-flag-standard-3-x-5">Standard US Flags</a></li>
+            </ul>
+         </li>
+         <li><a class="MenuBarItemSubmenu" href="/featherflags.html">FEATHER FLAGS</a>
+            <ul>
+               <li><a class="MenuBarItemSubmenu" href="/shop/flags/feather-dancer">FEATHER DANCER</a>
+                  <ul>
+                     <li><a href="/shop/flags/feather-dancer/auto">Auto</a></li>
+                     <li><a href="/shop/flags/feather-dancer/business">Business</a></li>
+                     <li><a href="/shop/flags/feather-dancer/decorative">Decorative</a></li>
+                     <li><a href="/shop/flags/feather-dancer/fireworks">Fireworks</a></li>
+                     <li><a href="/shop/flags/feather-dancer/property-management-1">Property Management</a></li>
+                  </ul>
+               </li>
+               <li><a class="MenuBarItemSubmenu" href="/shop/flags/sidewalk-solution">SIDEWALK SOLUTION</a>
+                  <ul>
+                     <li><a href="/shop/flags/sidewalk-solution/auto">Auto</a></li>
+                     <li><a href="/shop/flags/sidewalk-solution/business">Business</a></li>
+                     <li><a href="/shop/flags/sidewalk-solution/decorative">Decorative</a></li>
+                     <li><a href="/shop/flags/sidewalk-solution/fireworks">Fireworks</a></li>
+                     <li><a href="/shop/flags/sidewalk-solution/property-management-1">Property Management</a></li>
+                  </ul>
+               </li>
+               <li><a href="/shop/flags/tail-feather">TAIL FEATHER</a></li>
+            </ul>
+         </li>
+         <li><a class="MenuBarItemSubmenu" href="/shop/banners">BANNERS</a>
+            <ul>
+               <li><a href="/shop/banners/auto">Auto</a></li>
+               <li><a href="/shop/banners/business">Business</a></li>
+               <li><a href="/shop/banners/finance">Finance</a></li>
+               <li><a href="/shop/banners/property-management">Property Management</a></li>
+               <li><a href="/shop/banners/sales">Sales</a></li>
+            </ul>
+         </li>
+         <li class="shop-all"><a class="MenuBarItemSubmenu" href="#">MORE</a>
+            <ul>
+               <li><a href="/shop">SHOP ALL</a></li>
+               <li><a href="#">Pennants - soon!</a></li>
+               <li><a href="#">Patriotic Decor - soon!</a></li>
+               <li><a href="#">Message Flags - soon!</a></li>
+               <li><a href="#">Decorative Flags - soon!</a></li>
+               <li><div class="cart-nav">{module_shoppingcartsummary,horizontal}</div></li>
+            </ul>
+         </li>
+      </ul>
+            
+         </nav>
       <br class="clear" /> 
       <!--restore document flow-->
    </header>
@@ -126,5 +177,8 @@
 <!--END id="page"-->
 <div class="red-border"> </div>
 <!--purely aesthetic...bad practice...temporary until find better solution-->
-</body>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+    </body>
 </html>

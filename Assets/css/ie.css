@@ -84,9 +84,12 @@ p { font-family: "Open Sans", Helvetica, Arial, Verdana; font-size: 13px; text-a
 .utility-nav li { height: 45px; line-height: 45px; padding: 0 12px; text-align: center; }
 .utility-nav li:last-child { font-size: 23px; }
 .utility-nav a { color: #555; /*font-size: 15px!important;*/ }
-.icon-home { font-size: 22px!important; }
+.icon-home { font-size: 22px!important; line-height: 45px; }
 .utility-nav a:hover { color: #3487c3; }
 .utility-nav .search { background-image: url(../img/icons/mag-icon.png); background-repeat: no-repeat; background-position: 10px 10px; border: 1px solid #c2c2c2; border-radius: 30px; color: #555; font-family: "Open Sans", Helvetica, Arial, Verdana; font-size: 15px; font-weight: 300; height: 25px!important; outline: none; padding: 0 40px; width: 170px; webkit-appearance: none; padding-top: 5px!important; }
+.cart-nav a.cartSummaryLink { margin: 0!important; }
+.cart-nav .cartSummaryItem { padding-left: 15px; }
+
 .main-nav { border-bottom: 1px solid #3487c3; border-top: 1px solid #3487c3; padding: 1px 0; -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.25); -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.25); box-shadow: 0px 1px 2px rgba(0,0,0,0.25);/*text-shadow: rgba(0,0,0,.5) 1px 1px 5px;*/ }
 .main-nav li { background-color: #3487c3; background-image: url(../img/backgrounds/patterns/2.png);/*change later...wrong direction*/ line-height: 50px; height: 50px; text-align: center; width: 161px; border-right: 1px solid #f8f8ff; }
 .main-nav li:last-child { border-right: none; } 
