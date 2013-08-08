@@ -50,9 +50,10 @@ ul.MenuBarHorizontal ul
 	font-size: 100%;
 	z-index: 1020;
 	cursor: default;
-	width: 8.2em;
+	width: 161px;
 	position: absolute;
 	left: -1000em;
+	-moz-box-shadow: 0px 15px 20px rgba(0,0,0,0.25); -webkit-box-shadow: 0px 15px 20px rgba(0,0,0,0.25); box-shadow: 0px 15px 20px rgba(0,0,0,0.25);
 }
 /* Submenu that is showing with class designation MenuBarSubmenuVisible, we set left to auto so it comes onto the screen below its parent menu item */
 ul.MenuBarHorizontal ul.MenuBarSubmenuVisible
@@ -64,7 +65,7 @@ ul.MenuBarHorizontal ul li
 {
 	width: 161px;
 	font-size: 12px;
-	border-bottom: 1px solid #3487c3; -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.25); -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.25); box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+	border-bottom: 1px solid #3487c3; 
 	/*text-align: left;*/
 	border-right: none;
 }
