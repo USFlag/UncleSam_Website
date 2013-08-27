@@ -1,0 +1,135 @@
+<html>
+<head>
+   <title>Welcome to US Flag and Banner!</title>
+   <meta name="description" content="Looking for a US Flag? Feather Flag (Vertical Flag)? or Banner? Your in the right place! We manufacturer US Flags, Feather Flags (Vertical Flags), and Banners all right here in the US. We've got all of your advertising needs covered." />
+   <script src="Assets/lib/FlexSlider/jquery.flexslider-min.js" type="text/javascript"></script>
+   <link href="Assets/lib/FlexSlider/flexslider_v2.css" type="text/css" rel="stylesheet" />
+   <script>
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+          animation: "slide",
+			 smoothHeight: true,
+			 pauseOnAction: true,
+			 pauseOnHover: true
+        });
+      });
+   </script>
+</head>
+<body>
+<div id="home"> 
+   <!--Quick mockup...go back and refactor everything-->
+   <div class="left-column">
+      <div class="flexslider">
+         <ul class="slides">
+            <li class="american-made">
+               <h2>American Made</h2>
+               <p>FLY THE BEST US FLAGS AVAILABLE AND TAKE PRIDE IN THIS GREAT NATION</p>
+               <a href="/shop/flags/us/american-flag-standard-3-x-5"><img class="us-flag-img" src="Assets/img/catalogs/flags/us/us-flag-slider.png" width="417" height="124" alt="Shop US Flags"></a> <a class="shop-now" href="/shop/flags/us/american-flag-standard-3-x-5">SHOP NOW<span class="chevrons">>>></span></a> </li>
+            <li class="eye-catching">
+               <h2>Eye Catching</h2>
+               <p>CAPTIVATE AND INVITE NEW CUSTOMERS WITH THE FEATHER DANCER</p>
+               <a href="/shop/flags/feather-dancer"><img class="allen-peacock-img" src="Assets/img/catalogs/flags/flag-catalog-slider.png" width="300" alt="Buy Feather Flags"></a> <a class="shop-now" href="/shop/flags/feather-dancer">SHOP NOW<span class="chevrons">>>></span></a> </li>
+            <li class="beautiful-stock-b">
+               <h2>Beautiful</h2>
+               <p>STOCK BANNERS</p>
+               <a href="/shop/banners"><img class="banner-slide-img" src="Assets/img/catalogs/banners/banner-catalog.png" width="420" alt="Shop Banners"></a> <a class="shop-now" href="/shop/banners">SHOP NOW<span class="chevrons">>>></span></a> </li>
+         </ul>
+      </div>
+      <br class="clear" /> 
+      <!--restore document flow-->
+      <div class="shop-call-to-action">
+         <div class="pennants-streamers"> <img src="Assets/img/general/streamer.png" width="320" height="90" alt="Buy Pennants">
+            <h2><a href="/shop/pennants">PENNANTS & <br /> STREAMERS</a></h2>
+         </div>
+         <div class="us-flags-cta"> <a href="/shop/flags/us"><img src="Assets/img/general/us-flags-cta-module.png" width="367" height="176"></a>
+            <h2><a href="/shop/flags/us">US FLAGS</a></h2>
+         </div>
+         <div class="banners-cta"> <a href="/shop/banners"><img src="Assets/img/general/banner-cta-module.png" width="439" height="200" alt="Shop Banners"></a>
+            <h2><a href="/shop/banners">BANNERS</a></h2>
+         </div>
+      </div>
+   </div>
+   <div class="right-column">
+      <div class="deals-letter_v2">
+         <h2>DEALSLETTER</h2>
+         <p>Sign up to receive deals from US Flag and Banner!</p>
+         <form name="catemaillistform65675" onsubmit="return checkWholeForm65675(this)" method="post" action="http://www.usflagandbanner.com/CampaignProcess.aspx?ListID=45295">
+            <ul>
+               <li class="full-name">
+                  <label class="hide" for="CLFullName">Full Name</label>
+                  <input type="text" name="FullName" id="CLFullName" maxlength="255" placeholder="Full Name" />
+               </li>
+               <li class="email-address">
+                  <label class="hide" for="CLEmailAddress">Email Address</label>
+                  <input type="text" name="EmailAddress" id="CLEmailAddress" maxlength="255" placeholder="Email Address" />
+               </li>
+               <li class="captcha">
+                  <label class="hide">Enter Word Verification in box below</label>
+                  {module_captchav2} </li>
+               <li class="submit">
+                  <input class="deals-button" type="submit" value="SUBSCRIBE" />
+               </li>
+            </ul>
+            <br class="clear" />
+            <p class="spam"> <small><em>We hate spam as much as you!</em></small> </p>
+            <script type="text/javascript" src="http://usflagandbanner.com/CatalystScripts/ValidationFunctions.js"></script> 
+            <script type="text/javascript">
+         	//<![CDATA[
+            function checkWholeForm65675(theForm){
+            	var why = "";
+               if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value);
+               if (theForm.CaptchaV2) why += captchaIsInvalid(theForm, "Enter Word Verification in box below", "Please enter the correct Word Verification as seen in the image"); 
+               if (why != ""){alert(why);return false;}theForm.submit();return false;}
+           //]]>
+        </script>
+         </form>
+      </div>
+      <div class="feather-flags-cta"> <a href="/shop/flags"><img class="feather-flag-slider" src="Assets/img/general/fd-slider.png" width="268" height="157" alt="Buy Feather Dancer"></a>
+         <h2><a href="/shop/flags">ADVERTISING FLAGS</a></h2>
+      </div>
+   </div>
+   <!--END class="right-column"--> 
+   <br class="clear" /><!--restore document flow--> 
+</div>
+<!--END id="home"--> 
+<script>
+	//$(".catalogs:odd .layout-one-half").removeClass("layout-one-half").addClass("layout-one-half-right");
+</script> 
+
+<script>
+	if (!Modernizr.input.placeholder) {
+			$("input[placeholder], textarea[placeholder]").each(function(){
+				if ($(this).val() == "") {
+					$(this).val($(this).attr("placeholder"));
+					$(this).focus(function(){
+						if ($(this).val() == $(this).attr("placeholder")) {
+							$(this).val("");
+							$(this).removeClass('placeholder');
+						}
+					});
+					$(this).blur(function(){
+						if ($(this).val() == "") {
+							$(this).val($(this).attr("placeholder"));
+							$(this).addClass('placeholder');
+						}
+					});
+				}
+			});
+			
+			$('form').submit(function(){
+				// first do all the checking for required element and form validation. 
+				// Only remove placeholders before final submission
+				var placeheld = $(this).find('[placeholder]');
+				for (var i = 0; i < placeheld.length; i++) {
+					if (($(placeheld[i]).val() == $(placeheld[i]).attr('placeholder'))) {
+						// if not required, set value to empty before submitting
+						$(placeheld[i]).attr('value', '');
+					}
+				}
+				
+			});
+		}
+     </script> 
+
+</body>
+</html>

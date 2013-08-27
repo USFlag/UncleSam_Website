@@ -516,10 +516,12 @@ table.cartSummaryTable {
 
 td.cartSummaryItem {
 	padding: 0;
+	padding-right: 5px!important;
 }
 
 a.cartSummaryLink {
-	margin: 0 0 0 18px;
+	margin: 0 5px;
+	color: #3487c3!important;
 }
 
 .shop-main ul {
@@ -777,6 +779,7 @@ table.cart th {
 
 input.cartInputText {
 	width: 40px;
+	margin-top: 8px;
 }
 
 input#DiscountCode, input#GiftVoucher {

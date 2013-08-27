@@ -1,20 +1,11 @@
 
 <div class="online-shop">
-   <div class="shop-utility-nav">
-      <div class="breadcrumbs">
-         <span>You are here:</span>
-         <span class="crumbs">{tag_cataloguebreadcrumbs}</span>
-      </div><!--END class="breadcrumbs"-->
-      <div class="shoppingcart-summary">
-         {module_shoppingcartsummary,horizontal}
-      </div><!--END class="shoppingcart-summary"-->
-      <br class="clear" />
-   </div><!--END class="shop-utility-nav"-->
+   <div class="breadcrumbs"> <span>You are here:</span> <span class="crumbs">{tag_cataloguebreadcrumbs}</span> </div>
+   <!--END class="breadcrumbs"-->
+   
    <div class="products">
-      {tag_cataloguelist,4,,,,true,true} {tag_productlist,1,,20,price,true,true}
-   </div>
-   <div class="pagination-shop">
-      <!--{tag_previouspage,<img src="/CatalystImages/module_previous.png"/>} {tag_nextpage,<img src="/CatalystImages/module_next.png"/>} <br><br>-->{tag_pagination}
-   </div>
+      <hr />
+      {tag_cataloguelist,4,,,,true,true} {tag_productlist,1,,20,price,true,true} </div>
+   <div class="pagination-shop"> 
+      <!--{tag_previouspage,<img src="/CatalystImages/module_previous.png"/>} {tag_nextpage,<img src="/CatalystImages/module_next.png"/>} <br><br>-->{tag_pagination} </div>
 </div>
-

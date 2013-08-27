@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-   <link href='https://fonts.googleapis.com/css?family=Lato:100,700|Anton|Arimo:700|Raleway:200,300|Roboto+Slab:400,700|Open+Sans:400italic,400,300' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Lato:100,700|Anton|Arimo:700|Raleway:200,300|Roboto+Slab:100,400,700|Open+Sans:400italic,400,300' rel='stylesheet' type='text/css'>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=1200" />
    <title>{tag_pagetitle}</title>
@@ -10,11 +10,11 @@
    <script src="/Assets/lib/jQuery/jquery-1.9.1.min.js" type="text/javascript"></script>
    <script src="/Assets/lib/modernizr/modernizr.custom.45783.js" type="text/javascript"></script>
    <script src="/Assets/lib/SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
-   <link href="/Assets/lib/SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+   <link href="/Assets/lib/SpryAssets/SpryMenuBarHorizontal_v2.css" rel="stylesheet" type="text/css">
    <!--<script src="../Assets/lib/SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
    <link href="../Assets/lib/SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">-->
    <script src="/Assets/js/main.js" type="text/javascript"></script>
-   <link href="/Assets/css/main10.css" type="text/css" rel="stylesheet" />
+   <link href="/Assets/css/main_v2.css" type="text/css" rel="stylesheet" />
    <!--[if lt IE 9]>
 	<link rel="stylesheet" href="../Assets/lib/font-awesome/css/font-awesome-ie7.min.css">
    <link href="/Assets/css/ie.css" type="text/css" rel="stylesheet" />
@@ -42,89 +42,167 @@
 <!--purely aesthetic...bad practice...temporary until find better solution-->
 <div id="page">
       <header id="page-header">
-      <div class="branding"><a href="/home.html"><img src="/Assets/img/branding/logo.png" alt="US Flag and Banner Logo"></a></div>
-      <!--END class="branding"-->
+      <!--<div class="branding"><a href="../home.html"><img src="../Assets/img/branding/logo.png" alt="US Flag and Banner Logo" /></a></div>
+      
       <nav>
-            <h2 class="hide">Navigation</h2><!-- accessibility and HTML5 outline -->
-            <ul class="utility-nav">
-            	<li>
-               	<form name="catsearchform90064" method="post" action="/Default.aspx?SiteSearchID=2846&ID=/search-results.html">
-                     <div class="search-box">
-                        <input class="search" type="text" name="CAT_Search" id="CAT_Search" placeholder="Search..." />
-                        <input class="cat_button hide" type="submit" value="Search" />
-                     </div>
-                  </form>
-               </li>
-               <li><a href="../Account/account.html">My Account</a></li>
-               <li><a href="../faq.html">Help</a></li>
-               <li><a href="../contact.html">Contact</a></li>
-               <li><a href="../about.html">About</a></li>
-               <li><a href="../home.html" class="icon-home"><span class="hide">Home</span></a></li>
-            </ul>
-            <br class="clear" /><!--restore document flow-->
-            <!--<ul class="main-nav">
+         <h2 class="hide">Navigation</h2>
+         
+         <ul class="utility-nav">
+            <li>
+               <form name="catsearchform90064" method="post" action="/Default.aspx?SiteSearchID=2846&amp;ID=/search-results.html">
+                  <div class="search-box">
+                     <input class="search" type="text" name="CAT_Search" id="CAT_Search" placeholder="Search..." />
+                     <input class="cat_button hide" type="submit" value="Search" />
+                  </div>
+               </form>
+            </li>
+            <li><a href="../Account/account.html">My Account</a></li>
+            <li><a href="../faq.html">Help</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../home.html" class="icon-home"><span class="hide">Home</span></a></li>
+         </ul>
+         <br class="clear" /> -->
+         <!--restore document flow--> 
+         <!--<ul class="main-nav">
             	<li><a href="/shop">SHOP All</a></li>
             	<li><a href="../banners.html">BANNERS</a></li>
                <li class="feather-flags"><a href="../featherflags.html">FEATHER FLAGS</a></li>
                <li><a href="../usflags.html">US FLAGS</a></li>
             </ul>-->
-            
-            <ul id="MenuBar1" class="MenuBarHorizontal main-nav">
-         <li><a class="MenuBarItemSubmenu" href="/usflags.html">US FLAGS</a>
-            <ul>
-               <li><a href="/shop/flags/us/american-flag-economy-3-x-5">Economy US Flags</a></li>
-               <li><a href="/shop/flags/us/american-flag-standard-3-x-5">Standard US Flags</a></li>
-            </ul>
-         </li>
-         <li><a class="MenuBarItemSubmenu" href="/featherflags.html">FEATHER FLAGS</a>
-            <ul>
-               <li><a class="MenuBarItemSubmenu" href="/shop/flags/feather-dancer">FEATHER DANCER</a>
-                  <ul>
-                     <li><a href="/shop/flags/feather-dancer/auto">Auto</a></li>
-                     <li><a href="/shop/flags/feather-dancer/business">Business</a></li>
-                     <li><a href="/shop/flags/feather-dancer/decorative">Decorative</a></li>
-                     <li><a href="/shop/flags/feather-dancer/fireworks">Fireworks</a></li>
-                     <li><a href="/shop/flags/feather-dancer/property-management-1">Property Management</a></li>
-                  </ul>
-               </li>
-               <li><a class="MenuBarItemSubmenu" href="/shop/flags/sidewalk-solution">SIDEWALK SOLUTION</a>
-                  <ul>
-                     <li><a href="/shop/flags/sidewalk-solution/auto">Auto</a></li>
-                     <li><a href="/shop/flags/sidewalk-solution/business">Business</a></li>
-                     <li><a href="/shop/flags/sidewalk-solution/decorative">Decorative</a></li>
-                     <li><a href="/shop/flags/sidewalk-solution/fireworks">Fireworks</a></li>
-                     <li><a href="/shop/flags/sidewalk-solution/property-management-1">Property Management</a></li>
-                  </ul>
-               </li>
-               <li><a href="/shop/flags/tail-feather">TAIL FEATHER</a></li>
-            </ul>
-         </li>
-         <li><a class="MenuBarItemSubmenu" href="/shop/banners">BANNERS</a>
-            <ul>
-               <li><a href="/shop/banners/auto">Auto</a></li>
-               <li><a href="/shop/banners/business">Business</a></li>
-               <li><a href="/shop/banners/finance">Finance</a></li>
-               <li><a href="/shop/banners/property-management">Property Management</a></li>
-               <li><a href="/shop/banners/sales">Sales</a></li>
-            </ul>
-         </li>
-         <li class="shop-all"><a class="MenuBarItemSubmenu" href="#">MORE</a>
-            <ul>
-               <li><a href="/shop">SHOP ALL</a></li>
-               <li><a href="#">Pennants - soon!</a></li>
-               <li><a href="#">Patriotic Decor - soon!</a></li>
-               <li><a href="#">Message Flags - soon!</a></li>
-               <li><a href="#">Decorative Flags - soon!</a></li>
-               <li><div class="cart-nav">{module_shoppingcartsummary,horizontal}</div></li>
-            </ul>
-         </li>
-      </ul>
-            
-         </nav>
-      <br class="clear" /><!--restore document flow-->
-      
+         <!--<ul id="MenuBar1" class="MenuBarHorizontal main-nav">
+            <li><a class="MenuBarItemSubmenu" href="/usflags.html">US FLAGS</a>
+               <ul>
+                  <li><a href="/shop/flags/us/american-flag-economy-3-x-5">Economy US Flags</a></li>
+                  <li><a href="/shop/flags/us/american-flag-standard-3-x-5">Standard US Flags</a></li>
+               </ul>
+            </li>
+            <li><a class="MenuBarItemSubmenu" href="/featherflags.html">FEATHER FLAGS</a>
+               <ul>
+                  <li><a class="MenuBarItemSubmenu" href="/shop/flags/feather-dancer">FEATHER DANCER</a>
+                     <ul>
+                        <li><a href="/shop/flags/feather-dancer/auto">Auto</a></li>
+                        <li><a href="/shop/flags/feather-dancer/business">Business</a></li>
+                        <li><a href="/shop/flags/feather-dancer/decorative">Decorative</a></li>
+                        <li><a href="/shop/flags/feather-dancer/fireworks">Fireworks</a></li>
+                        <li><a href="/shop/flags/feather-dancer/property-management-1">Property Management</a></li>
+                     </ul>
+                  </li>
+                  <li><a class="MenuBarItemSubmenu" href="/shop/flags/sidewalk-solution">SIDEWALK SOLUTION</a>
+                     <ul>
+                        <li><a href="/shop/flags/sidewalk-solution/auto">Auto</a></li>
+                        <li><a href="/shop/flags/sidewalk-solution/business">Business</a></li>
+                        <li><a href="/shop/flags/sidewalk-solution/decorative">Decorative</a></li>
+                        <li><a href="/shop/flags/sidewalk-solution/fireworks">Fireworks</a></li>
+                        <li><a href="/shop/flags/sidewalk-solution/property-management-1">Property Management</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="/shop/flags/tail-feather">TAIL FEATHER</a></li>
+               </ul>
+            </li>
+            <li><a class="MenuBarItemSubmenu" href="/shop/banners">BANNERS</a>
+               <ul>
+                  <li><a href="/shop/banners/auto">Auto</a></li>
+                  <li><a href="/shop/banners/business">Business</a></li>
+                  <li><a href="/shop/banners/finance">Finance</a></li>
+                  <li><a href="/shop/banners/property-management">Property Management</a></li>
+                  <li><a href="/shop/banners/sales">Sales</a></li>
+               </ul>
+            </li>
+            <li class="shop-all"><a class="MenuBarItemSubmenu" href="#">MORE</a>
+               <ul>
+                  <li><a href="/shop">SHOP ALL</a></li>
+                  <li><a href="#">Pennants - soon!</a></li>
+                  <li><a href="#">Patriotic Decor - soon!</a></li>
+                  <li><a href="#">Message Flags - soon!</a></li>
+                  <li><a href="#">Decorative Flags - soon!</a></li>
+                  <li>
+                     <div class="cart-nav">{module_shoppingcartsummary,horizontal}</div>
+                  </li>
+               </ul>
+            </li>
+         </ul>-->
+      <div class="branding"><a href="/home_v2"><img src="/Assets/img/branding/USFLAG_logo_v2.png" width="460" height="100" alt="US Flag and Banner Logo"></a></div><!--END class="branding"-->
+      <div class="free-shipping-v2"><img src="/Assets/img/general/free-shipping.png" width="225" height="80" alt="Free Shipping On Orders Over $99!"></div><!--END class="free-shipping"-->
+      <br class="clear" />
+      <nav class="main-nav">
+      	<ul id="MenuBar1" class="MenuBarHorizontal">
+            <li class="us-flag-menu-item"><a class="MenuBarItemSubmenu us-flag-item" href="/usflags.html">US FLAGS</a>
+               <ul class="sub-us-menu">
+                  <li><a href="/shop/flags/us/american-flag-economy-3-x-5">Economy US Flags</a></li>
+                  <li><a href="/shop/flags/us/american-flag-standard-3-x-5">Standard US Flags</a></li>
+               </ul>
+            </li>
+            <li class="feather-flag-menu-item"><a class="MenuBarItemSubmenu feather-flag-item" href="/featherflags.html">FEATHER FLAGS</a>
+               <ul class="sub-feather-menu">
+                  <li><a class="MenuBarItemSubmenu" href="/shop/flags/feather-dancer">FEATHER DANCER</a>
+                     <ul>
+                        <li><a href="/shop/flags/feather-dancer/auto">Auto</a></li>
+                        <li><a href="/shop/flags/feather-dancer/business">Business</a></li>
+                        <li><a href="/shop/flags/feather-dancer/decorative">Decorative</a></li>
+                        <li><a href="/shop/flags/feather-dancer/fireworks">Fireworks</a></li>
+                        <li><a href="/shop/flags/feather-dancer/property-management-1">Property Management</a></li>
+                     </ul>
+                  </li>
+                  <li><a class="MenuBarItemSubmenu" href="/shop/flags/sidewalk-solution">SIDEWALK SOLUTION</a>
+                     <ul>
+                        <li><a href="/shop/flags/sidewalk-solution/auto">Auto</a></li>
+                        <li><a href="/shop/flags/sidewalk-solution/business">Business</a></li>
+                        <li><a href="/shop/flags/sidewalk-solution/decorative">Decorative</a></li>
+                        <li><a href="/shop/flags/sidewalk-solution/fireworks">Fireworks</a></li>
+                        <li><a href="/shop/flags/sidewalk-solution/property-management-1">Property Management</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="/shop/flags/tail-feather">TAIL FEATHER</a></li>
+               </ul>
+            </li>
+            <li class="banner-menu-item"><a class="MenuBarItemSubmenu banner-item" href="/shop/banners">BANNERS</a>
+               <ul class="sub-feather-banner-menu">
+                  <li><a href="/shop/banners/auto">Auto</a></li>
+                  <li><a href="/shop/banners/business">Business</a></li>
+                  <li><a href="/shop/banners/finance">Finance</a></li>
+                  <li><a href="/shop/banners/property-management">Property Management</a></li>
+                  <li><a href="/shop/banners/sales">Sales</a></li>
+               </ul>
+            </li>
+            <li class="shop-all more-menu-item"><a class="MenuBarItemSubmenu more-item" href="#">MORE</a>
+               <ul class="sub-more-menu">
+                  <li><a href="/shop">SHOP ALL</a></li>
+                  <li><a href="/shop/pennants">Pennants</a></li>
+                  <li><a href="/shop/patriotic-decor">Patriotic Decor</a></li>
+                  <li><a href="/shop/flags/message">Message Flags</a></li>
+                  <li><a href="/shop/flags/decorative">Decorative Flags</a></li>
+               </ul>
+            </li>
+         </ul>
+         
+         <ul class="utility-nav">
+         	<li class="icon-home_v2"><a href="http://www.usflagandbanner.com/home_v2"><img src="/Assets/img/icons/utility-nav-home-icon.png" width="21" height="15" alt="Go back to the home page."></a></li>
+            <li><a href="../about.html">ABOUT</a>&nbsp;&nbsp;|</li>
+            <li><a href="../contact.html">CONTACT</a>&nbsp;&nbsp;|</li>
+            <li><a href="../faq.html">HELP</a>&nbsp;&nbsp;|</li>
+            <li class="my-account-list-item"><a href="../Account/account.html">MY ACCOUNT</a>&nbsp;&nbsp;</li>
+            <!--<li><div class="shoppingcart-summary"> {module_shoppingcartsummary,horizontal} </div></li>-->
+            <li class="search-list-item">
+               <form name="catsearchform90064" method="post" action="/Default.aspx?SiteSearchID=2846&amp;ID=/search-results.html">
+                  <div class="search-box">
+                     <input class="search" type="text" name="CAT_Search" id="CAT_Search" placeholder="Search..." />
+                     <input class="cat_button hide" type="submit" value="Search" />
+                  </div>
+                  <div class="shoppingcart-summary"> {module_shoppingcartsummary,horizontal} </div>
+                  <br class="clear" />
+               </form>
+            </li>
+         </ul>
+         <br class="clear" />
+         <!--restore document flow-->
+         
+      </nav>
+      <br class="clear" /> 
+      <!--restore document flow-->
    </header>
-      <!--END id="page-header"-->
+   <!--END id="page-header"-->
+   <br class="clear" /><!--restore document flow-->
       <section id="page-content">
       <h2 class="hide">Content</h2>
       <!-- accessibility and HTML5 outline --> 
@@ -133,21 +211,32 @@
       <!--END id="page-content"-->
       <footer id="page-footer">
       <nav>
+         <h2 class="hide">Legal/Footer Navigation</h2>
+         <div class="legal_v2">
+         	<small>Copyright &copy; 2013 US Flag and Banner <span>|</span><a href="../terms.html">Terms of Use</a> <span>|</span><a href="../privacy.html">Privacy Policy</a></small>
+         </div>
+         <div class="footer-nav_v2">
+         	<small><a href="../about.html">About</a> <span>|</span><a href="../faq.html">FAQs</a> <span>|</span><a href="../contact.html">Contact</a><span>|</span><a href="../Account/account.html">My Account</a><span>|</span><a href="/shop">Shop</a></small>
+         </div>
+      </nav>
+      <br class="clear" />
+         <!--restore document flow-->
+   </footer>
+   <!--END id="page-footer"--> 
+      <!--<footer id="page-footer">
+      <nav>
             <h2>More</h2>
             <ul>
             <li><a href="../about.html">ABOUT</a><span>|</span></li>
             <li><a href="../faq.html">FAQs</a><span></span></li>
-            <!--<li><a href="#">FACEBOOK</a><span>|</span></li>
-               <li><a href="#">TWITTER</a><span>|</span></li>
-               <li><a href="#">GOOGLE +</a></li>-->
+            
          </ul>
          </nav>
-      <br class="clear" /><!--restore document flow-->
+      <br class="clear" />
       <div class="branding"><a href="/home.html"><img src="/Assets/img/branding/logo.png" width="195" alt="US Flag and Banner Logo"></a></div>
-      <!--END class="branding"--> 
-      <br class="clear" /><!--restore document flow--> 
+      <br class="clear" />
       <small>Copyright &copy; <span>-</span> 2013 US Flag and Banner <span>-</span><a href="/terms.html">Terms of Use</a> <span>-</span><a href="/privacy.html">Privacy Policy</a></small>
-   </footer>
+   </footer>-->
       <!--END id="page-footer"--> 
    </div>
 <!--END id="page"-->
